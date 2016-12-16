@@ -1,4 +1,4 @@
-# my-website
+# Personal Website
 My personal website using Github Pages
 
-Viewable at https://redbairn.github.io/my-website/
+Viewable at https://redbairn.github.io/profile/

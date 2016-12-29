@@ -10,7 +10,7 @@ Ref: https://tympanus.net/codrops/2010/06/02/smooth-vertical-or-horizontal-page-
     padding:0;
 }
 body{
-    background:#000;
+    background-color:#000;
     font-family:Georgia;
     font-size: 34px;
     font-style: italic;
@@ -20,7 +20,6 @@ body{
     top:0px;
     left:0px;
     bottom:0px;
-	background: url(../images/CRAIG_background.png) 10px 400px no-repeat,  url(../images/CRAIG_background.png) 96% 200px no-repeat;
 }
 .section{
     margin:0px;
@@ -39,12 +38,12 @@ body{
 }
 /*Text inside the speech bubble*/
 #section1.section  p{
-    margin:50px 0px 0px 350px;
+    margin:25px 0px 0px 350px;
     width:800px;
 }
 
 #section1.section  h2{
-    margin:50px 0px 0px 350px;
+    margin:25px 0px 0px 350px;
     width:800px;
 }
 
@@ -58,22 +57,22 @@ p.speech {
   text-align: center;
   line-height: 70px;
   background-color: #000;
-  border: 8px solid #666;
+  border: 8px solid #fff;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   border-radius: 30px;
-  -webkit-box-shadow: 2px 2px 4px #888;
-  -moz-box-shadow: 2px 2px 4px #888;
-  box-shadow: 2px 2px 4px #888;
+  -webkit-box-shadow: 2px 2px 4px #ccc;
+  -moz-box-shadow: 2px 2px 4px #ccc;
+  box-shadow: 2px 2px 4px #ccc;
 }
 p.speech:before {
   content: ' ';
   position: absolute;
   width: 0;
   height: 0;
-  bottom: -100px;
-  border: 50px solid;
-  border-color: #666 transparent transparent #666;
+  bottom: -80px;
+  border: 40px solid;
+  border-color: #fff transparent transparent #fff;
 }
 p.speech:after {
   content: ' ';
@@ -81,11 +80,18 @@ p.speech:after {
   width: 0;
   height: 0;
   left:20px;
-  bottom: -80px;
-  border: 40px solid;
+  bottom: -60px;
+  border: 30px solid;
   border-color: #000 transparent transparent #000;
 }
 
+/*Avatar*/
+.avatar{
+	position: fixed;
+	height: 70%;
+	left: 100px;
+	bottom:0px;
+}
 
 .black{
     color:#fff;

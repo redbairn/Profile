@@ -20,6 +20,7 @@ body{
     top:0px;
     left:0px;
     bottom:0px;
+	background: url(../images/CRAIG_background.png) 10px 400px no-repeat,  url(../images/CRAIG_background.png) 96% 200px no-repeat;
 }
 .section{
     margin:0px;
@@ -36,6 +37,56 @@ body{
     margin:20px 0px 0px 50px;
     width:600px;
 }
+/*Text inside the speech bubble*/
+#section1.section  p{
+    margin:50px 0px 0px 350px;
+    width:800px;
+}
+
+#section1.section  h2{
+    margin:50px 0px 0px 350px;
+    width:800px;
+}
+
+/* Speech bubble */
+/* https://www.sitepoint.com/pure-css3-speech-bubbles/ */
+
+p.speech {
+  position: relative;
+  width: 800px;
+  height: 400px;
+  text-align: center;
+  line-height: 70px;
+  background-color: #000;
+  border: 8px solid #666;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  -webkit-box-shadow: 2px 2px 4px #888;
+  -moz-box-shadow: 2px 2px 4px #888;
+  box-shadow: 2px 2px 4px #888;
+}
+p.speech:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: -100px;
+  border: 50px solid;
+  border-color: #666 transparent transparent #666;
+}
+p.speech:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left:20px;
+  bottom: -80px;
+  border: 40px solid;
+  border-color: #000 transparent transparent #000;
+}
+
+
 .black{
     color:#fff;
    

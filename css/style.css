@@ -1,165 +1,23 @@
-/*
-
-Smooth Vertical or Horizontal Page Scrolling with jQuery
-Ref: https://tympanus.net/codrops/2010/06/02/smooth-vertical-or-horizontal-page-scrolling-with-jquery/
-
-*/
-
-*{
-    margin:0;
-    padding:0;
-}
-body{
-    background-color:#000;
-    font-family:Georgia;
-    font-size: 34px;
-    font-style: italic;
-    letter-spacing:-1px;
-    width:12000px;
-    position:absolute;
-    top:0px;
-    left:0px;
-    bottom:0px;
-}
-.section{
-    margin:0px;
-    bottom:0px;
-    width:4000px;
-    float:left;
-    height:100%;
-    text-shadow:1px 1px 2px #f0f0f0;
-}
-.section h2{
-    margin:50px 0px 30px 50px;
-}
-.section p{
-    margin:20px 0px 0px 50px;
-    width:600px;
-}
-/*Text inside the speech bubble*/
-#section1.section  p{
-    margin:25px 0px 0px 350px;
-    width:800px;
-}
-
-#section1.section  h2{
-    margin:25px 0px 0px 350px;
-    width:800px;
-}
-
-/* Speech bubble */
-/* https://www.sitepoint.com/pure-css3-speech-bubbles/ */
-
-p.speech {
-  position: relative;
-  width: 800px;
-  height: 400px;
-  text-align: center;
-  line-height: 70px;
-  background-color: #000;
-  border: 8px solid #fff;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
-  -webkit-box-shadow: 2px 2px 4px #ccc;
-  -moz-box-shadow: 2px 2px 4px #ccc;
-  box-shadow: 2px 2px 4px #ccc;
-}
-p.speech:before {
-  content: ' ';
-  position: absolute;
-  width: 0;
-  height: 0;
-  bottom: -80px;
-  border: 40px solid;
-  border-color: #fff transparent transparent #fff;
-}
-p.speech:after {
-  content: ' ';
-  position: absolute;
-  width: 0;
-  height: 0;
-  left:20px;
-  bottom: -60px;
-  border: 30px solid;
-  border-color: #000 transparent transparent #000;
-}
-
-/*Avatar*/
+/*Rounded Avatar*/
 .avatar{
-	position: fixed;
-	height: 70%;
-	left: 100px;
-	bottom:0px;
+	left: 40%;
+    margin-top: 1em;
+    margin-right: 1em;
+    position: relative;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+
+    -webkit-box-shadow: 0 0 0 5px #fff, 0 0 0 6px #999, 0 10px 10px 8px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 0 0 5px #fff, 0 0 0 6px #999, 0 10px 10px 8px rgba(0,0,0,.2);
+}
+.reference{
+	color: #fff;
+	text-align: center;
+	font-size: 0.7em;
 }
 
-.black{
-    color:#fff;
-   
-    background:#000 url(../images/black.jpg) no-repeat top right;
-}
-.white{
-    color:#000;
-    background:#fff url(../images/white.jpg) no-repeat top right;
-}
-
-.section ul{
-    list-style:none;
-    margin:20px 0px 0px 550px;
-}
-.black ul li{
-    float:left;
-    padding:5px;
-    margin:5px;
-    color:#aaa;
-}
-.black ul li a{
-    display:block;
-    color:#f0f0f0;
-}
-.black ul li a:hover{
-    text-decoration:none;
-    color:#fff;
-}
-.white ul li{
-    float:left;
-    padding:5px;
-    margin:5px;
-    color:#aaa;
-}
-.white ul li a{
-    display:block;
-    color:#222;
-}
-.white ul li a:hover{
-    text-decoration:none;
-    color:#000;
-}
-
-/*
-Smooth Vertical or Horizontal Page Scrolling with jQuery
--Were Internal Styles
-*/
-a{
-	color:#fff;
-	text-decoration:none;
-}
-a:hover{
-	text-decoration:underline;
-}
-span.reference{
-	position:fixed;
-	left:10px;
-	bottom:10px;
-	font-size:13px;
-	font-weight:bold;
-}
-span.reference a{
-	color:#fff;
-	text-shadow:1px 1px 1px #000;
-	padding-right:20px;
-}
-span.reference a:hover{
-	color:#ddd;
+.reference a{
 	text-decoration:none;
 }

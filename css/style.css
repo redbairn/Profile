@@ -1,14 +1,10 @@
 /*Rounded Avatar*/
 .avatar{
-	left: 40%;
-    margin-top: 1em;
-    margin-right: 1em;
-    position: relative;
-
+	display: block;
+    margin: 2% auto 2% auto;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-
     -webkit-box-shadow: 0 0 0 5px #fff, 0 0 0 6px #999, 0 10px 10px 8px rgba(0,0,0,.2);
     -moz-box-shadow: 0 0 0 5px #fff, 0 0 0 6px #999, 0 10px 10px 8px rgba(0,0,0,.2);
 }

@@ -100,10 +100,19 @@ body{
     overflow: auto;
 }
 @media screen and (max-width: 480px) {
+	.main-section > .section-content {
+		display: table-cell;
+		vertical-align: middle;
+		padding: 10px;
+		text-align: left;
+	}
 	.section-content {
 		padding: 10px;
 		display: block;
 		overflow: auto;
+	}
+	.paragraph-section{
+		padding:0;
 	}
 }
 .small {

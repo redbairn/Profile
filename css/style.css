@@ -36,11 +36,20 @@ body{
     background: linear-gradient(to bottom, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#227daa', endColorstr='#51accd', GradientType=0 );
 }
+
 .section-content {
     padding: 100px 100px;
     display: block;
     overflow: auto;
 }
+@media screen and (max-width: 480px) {
+	.section-content {
+		padding: 10px;
+		display: block;
+		overflow: auto;
+	}
+}
+
 
 .ui-content{
 	padding:0;

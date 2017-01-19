@@ -8,10 +8,10 @@ body{
     float: left;
     width: 20%;
 }
-.edu-title{
+.spaced-title{
     float: left;
     width: 100%;
-	margin-bottom: 5%;
+	margin-bottom: 2%;
 }
 
 .section {
@@ -123,6 +123,10 @@ body{
 	}
 	.paragraph-section{
 		padding:0;
+	}
+	.title {
+		float: left;
+		width: 100%;
 	}
 }
 /*Ninja Text*/

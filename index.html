@@ -44,12 +44,24 @@
 					Skills
 					</a>
 				</li>
-				<li data-icon="mail">
-					<a href="#contact">
-					Contact
-					</a>
-				</li>
 			</ul>
+			<!--Contact Form-->
+			<h2>Contact Me!</h2>
+			<div class="ui-grid-solo">
+				<div class="ui-block-a">
+					<!--Thanks to FormSpree-->
+					<!--https://formspree.io/-->
+					<form method="POST" action="http://formspree.io/craigdanielbell@gmail.com">
+						<input type="hidden" name="_subject" value="Message from Github Portfolio Page!" />
+						<input type="text" name="fullname" placeholder="Your name">
+						<input type="email" name="email" placeholder="Your email">
+						<textarea name="message" placeholder="Your message"></textarea>
+						<div class="ui-field-contain">
+							<button type="submit" class="ui-shadow ui-btn ui-corner-all">Send</button>
+						</div>
+					</form>
+				</div>
+			</div><!-- /Contact Form-->
 		</div><!-- /panel -->
 		<!-- /Menu Panel-->
 		<div data-role="header" data-theme="b" id="about">
@@ -347,9 +359,6 @@
 		</div><!-- /footer -->
 	</div><!-- /page -->
 	<!-- /Projects section-->
-	
-	
-	
 	<script>
           new WOW().init();
     </script>

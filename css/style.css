@@ -4,6 +4,16 @@ body{
 }
 
 /*Blueand White Sections*/
+.title {
+    float: left;
+    width: 20%;
+}
+.edu-title{
+    float: left;
+    width: 100%;
+	margin-bottom: 5%;
+}
+
 .section {
     display: block;
 }
@@ -147,7 +157,54 @@ body{
         visibility:hidden;
     }
 }
-
+/*EXPERIENCE*/
+.section-content .content > div {
+    padding-left: 20px;
+}
+.box {
+    border: 1px solid #89bbd3;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    margin-bottom: 20px;
+    transition: opacity 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    -ms-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+}
+.content {
+    float: left;
+    width: 80%;
+}
+.box h2, .box img {
+    display: inline;
+}
+.blue-bg .box h2 {
+    color: white;
+    text-transform: none;
+}
+.box h2 {
+    margin: 0;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+.box p {
+    color: #95c5db;
+}
+.blue-bg .box p {
+    color: #deeef5;
+}
+.content p {
+    margin: 0;
+    font-size: 18px;
+    color: white;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
 /*Rounded Avatar*/
 .avatar{
 	display: block;

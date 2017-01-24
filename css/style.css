@@ -230,6 +230,8 @@ img#ucd_logo{
     -o-transition: all ease 0.5s;
     -ms-transition: all ease 0.5s;
     transition: all ease 0.5s;
+	/*Remove inherited values*/
+	text-shadow: 0 0px 0 #f3f3f3;
 }
 .content {
     float: left;
@@ -263,9 +265,11 @@ img#ucd_logo{
     letter-spacing: 1px;
 }
 /*PROJECTS*/
-
-
-
-
+#projects .box h2{
+	color: #52acd1;
+}
+.white-bg .box p {
+    color: #a3d0e3;
+}
 
 

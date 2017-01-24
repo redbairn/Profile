@@ -210,6 +210,13 @@ img#ucd_logo{
 		margin-left:4%;
 	}
 }
+/*EDUCATION*/
+/*Hacky way to remove the ui-shadow*/
+.edu{
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15);
+}
+
+
 
 /*EXPERIENCE & SKILLS*/
 .skillset_para{
@@ -233,6 +240,27 @@ img#ucd_logo{
 	/*Remove inherited values*/
 	text-shadow: 0 0px 0 #f3f3f3;
 }
+/*Change for hover state (BLUE)*/
+.blue-bg .box:hover {
+    border: 1px solid #fff;
+    color: white;
+	cursor:pointer;
+	background-color:white;
+}
+.blue-bg .box:hover h2{
+	color: #3295be;
+}
+.blue-bg .box:hover p{
+	color: #a3d0e3;
+}
+.blue-bg .ui-link:hover{
+	text-decoration:none;
+}
+.blue-bg .ui-link{
+	text-decoration:none;
+}
+
+/*End of hover change state for blue*/
 .content {
     float: left;
     width: 80%;
@@ -244,6 +272,8 @@ img#ucd_logo{
     color: white;
     text-transform: none;
 }
+
+
 .box h2 {
     margin: 0;
     font-size: 22px;
@@ -271,5 +301,24 @@ img#ucd_logo{
 .white-bg .box p {
     color: #a3d0e3;
 }
-
+/*Change for hover state (WHITE)*/
+.white-bg .box:hover {
+    border: 1px solid #3295be;
+    color: white;
+	cursor:pointer;
+	background-color: #3295be;
+}
+.white-bg .box:hover h2{
+	color: #fff;
+}
+.white-bg .box:hover p{
+	color: #DEEEF5;
+}
+.white-bg .ui-link:hover{
+	text-decoration:none;
+}
+.white-bg .ui-link{
+	text-decoration:none;
+}
+/*End of hover change state for white*/
 

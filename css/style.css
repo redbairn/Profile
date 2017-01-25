@@ -16,9 +16,9 @@ body{
 .bottom-nav-b{
 	background:#3295be;
 }
-
-
-
+#my_title{
+	text-align:center;
+}
 /*Blue and White Sections*/
 .title {
     float: left;
@@ -77,9 +77,6 @@ body{
 .ui-content{
 	padding:0;
 }
-.paragraph-section{
-	padding:2em;
-}
 
 /*Main Section*/
 .main-section {
@@ -113,13 +110,14 @@ body{
     content: ' ';
     display: block;
     width: 50px;
-    margin: 10px auto -10px 0;
+    margin: 10px 0 -10px 48%;
     border: 2px solid #fff;
 }
 .main-section p {
     font-size: 20px;
     color: #deeef5;
     letter-spacing: 1px;
+	text-align:center;
 }
 .section-content {
     padding: 100px 100px;
@@ -155,6 +153,10 @@ body{
     font-size: 14px;
     color: #aac7d9;
     margin-bottom: 10px;
+	text-align:center;
+}
+.box .small{
+	text-align:left;
 }
 .hideMe {
     -moz-animation: cssAnimation 0s ease-in 4s forwards;
@@ -166,6 +168,7 @@ body{
     animation: cssAnimation 0s ease-in 4s forwards;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
+	text-align:center;
 }
 @keyframes cssAnimation {
     to {
@@ -208,6 +211,9 @@ img#ucd_logo{
 @media screen and (max-width: 480px) {
 	img#ucd_logo{
 		margin-left:4%;
+	}
+	.main-section h1:after {
+		margin: 10px 0 -10px 42%;
 	}
 }
 /*EDUCATION*/
@@ -298,6 +304,9 @@ img#ucd_logo{
 #projects .box h2{
 	color: #52acd1;
 }
+#projects .box:hover h2{
+	color: #fff;
+}
 .white-bg .box p {
     color: #a3d0e3;
 }
@@ -312,13 +321,16 @@ img#ucd_logo{
 	color: #fff;
 }
 .white-bg .box:hover p{
-	color: #DEEEF5;
+	color: #fff;
 }
 .white-bg .ui-link:hover{
 	text-decoration:none;
 }
 .white-bg .ui-link{
 	text-decoration:none;
+}
+.white-bg .box:hover .small{
+	color:#fff;
 }
 /*End of hover change state for white*/
 

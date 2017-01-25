@@ -18,6 +18,7 @@ body{
 }
 #my_title{
 	text-align:center;
+	/*-webkit-margin-before: 0em;*/
 }
 /*Blue and White Sections*/
 .title {
@@ -124,27 +125,7 @@ body{
     display: block;
     overflow: auto;
 }
-@media screen and (max-width: 480px) {
-	.main-section > .section-content {
-		display: table-cell;
-		vertical-align: middle;
-		padding: 10px;
-		text-align: left;
-	}
-	.section-content {
-		padding: 10px;
-		display: block;
-		overflow: auto;
-	}
-	.paragraph-section{
-		padding:0;
-	}
-	.title {
-		float: left;
-		width: 100%;
-		margin-top: 10%; 
-	}
-}
+
 
 /*ABOUT*/
 /*Ninja Text*/
@@ -154,6 +135,9 @@ body{
     color: #aac7d9;
     margin-bottom: 10px;
 	text-align:center;
+}
+.small .hideMe{
+	margin-bottom: 0px;
 }
 .box .small{
 	text-align:left;
@@ -184,6 +168,14 @@ body{
         visibility:hidden;
     }
 }
+#about .main-section p{
+	-webkit-margin-before: 1em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+
 /*Rounded Avatar*/
 .avatar{
 	display: block;
@@ -207,14 +199,6 @@ body{
 }
 img#ucd_logo{
 	margin-left:1%;
-}
-@media screen and (max-width: 480px) {
-	img#ucd_logo{
-		margin-left:4%;
-	}
-	.main-section h1:after {
-		margin: 10px 0 -10px 42%;
-	}
 }
 /*EDUCATION*/
 /*Hacky way to remove the ui-shadow*/
@@ -334,3 +318,38 @@ img#ucd_logo{
 }
 /*End of hover change state for white*/
 
+
+/*MOBILE*/
+@media screen and (max-width: 480px) {
+	img#ucd_logo{
+		margin-left:4%;
+	}
+	.main-section h1:after {
+		margin: 10px 0 -10px 42%;
+	}
+	.main-section > .section-content {
+		display: table-cell;
+		vertical-align: middle;
+		padding: 10px;
+		text-align: left;
+	}
+	.section-content {
+		padding: 10px;
+		display: block;
+		overflow: auto;
+	}
+	.paragraph-section{
+		padding:0;
+	}
+	.title {
+		float: left;
+		width: 100%;
+		margin-top: 10%; 
+	}
+	.content{
+		width:100%;
+	}
+	.section-content .content > div {
+		padding-left: 0px;
+	}
+}

@@ -1,13 +1,20 @@
 /*********************
 *1/GENERAL
-*2/ABOUT
-*3/EXPERIENCE & SKILLS
-*4/PROJECTS
-*5/SOCIAL
-*6/MOBILE LAYOUT
+*-1a/ABOUT
+*-1b/EDUCATION
+*-1c/EXPERIENCE
+*-1d/SKILLS
+*-1e/PROJECTS
+*-1f/SOCIAL
+*2/-LARGE DESKTOPS
+*3/-SMALL DESKTOPS
+*4/-TABLETS
+*5/-MOBILE
 ***************************/
 
+/**********/
 /*GENERAL*/
+/**********/
 body{
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	margin:0;
@@ -20,122 +27,59 @@ body{
 }
 #my_title{
 	text-align:center;
-	/*-webkit-margin-before: 0em;*/
 }
 /*Blue and White Sections*/
-.title {
-    float: left;
-    width: 20%;
-	margin-bottom: 2%;
-}
-.spaced-title{
-    float: left;
-    width: 100%;
-	margin-bottom: 2%;
-}
-
 .section {
-    display: block;
+	display: block;
 }
 .blue-bg .title h1 {
-    color: white;
+	color: white;
 }
 .white-bg .title h1 {
-    color: #3295be;
+	color: #3295be;
 }
 .title > h1 {
-    margin: 0;
-    text-transform: uppercase;
-    font-size: 26px;
-    letter-spacing: 2px;
+	margin: 0;
+	text-transform: uppercase;
+	font-size: 26px;
+	letter-spacing: 2px;
 }
 .title h1:after {
-    content: ' ';
-    display: block;
-    width: 50px;
-    margin: 10px 0;
+	content: ' ';
+	display: block;
+	width: 50px;
+	margin: 10px 0;
 }
 .blue-bg .title > h1:after {
-    border: 2px solid #fff;
+	border: 2px solid #fff;
 }
 .white-bg .title > h1:after {
-    border: 2px solid #3295be;
+	border: 2px solid #3295be;
 }
 .blue-bg > .section-content {
-    background-color: #3295be;
-    background: rgba(34,125,170,1);
-    background: -moz-linear-gradient(top, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(34,125,170,1)), color-stop(100%, rgba(81,172,205,1)));
-    background: -webkit-linear-gradient(top, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
-    background: -o-linear-gradient(top, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
-    background: -ms-linear-gradient(top, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
-    background: linear-gradient(to bottom, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#227daa', endColorstr='#51accd', GradientType=0 );
+	background-color: #3295be;
+	background: rgba(34,125,170,1);
+	background: -moz-linear-gradient(top, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(34,125,170,1)), color-stop(100%, rgba(81,172,205,1)));
+	background: -webkit-linear-gradient(top, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
+	background: -o-linear-gradient(top, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
+	background: -ms-linear-gradient(top, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
+	background: linear-gradient(to bottom, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#227daa', endColorstr='#51accd', GradientType=0 );
 }
-
 .white-bg > .section-content {
-    background-color: white;
+	background-color: white;
 }
-
 .ui-content{
 	padding:0;
 }
-
-/*Main Section*/
-.main-section {
-    background: rgba(34,125,170,1);
-    background: -moz-linear-gradient(top, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(34,125,170,1)), color-stop(100%, rgba(81,172,205,1)));
-    background: -webkit-linear-gradient(top, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
-    background: -o-linear-gradient(top, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
-    background: -ms-linear-gradient(top, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
-    background: linear-gradient(to bottom, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
-    display: table;
-    width: 100%;
-    height: 700px;
-    position: relative;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    color: white;
-}
-.main-section h1 {
-    font-size: 60px;
-}
-.main-section > .section-content {
-    display: table-cell;
-    vertical-align: middle;
-    padding: 10px 100px;
-    text-align: left;
-}
-.main-section h1:after {
-    content: ' ';
-    display: block;
-    width: 50px;
-    margin: 10px 0 -10px 48%;
-    border: 2px solid #fff;
-}
-.main-section p {
-    font-size: 20px;
-    color: #deeef5;
-    letter-spacing: 1px;
-	text-align:center;
-}
-.section-content {
-    padding: 100px 100px;
-    display: block;
-    overflow: auto;
-}
-
-
 /*ABOUT*/
 /*Ninja Text*/
 /*SOURCE: http://stackoverflow.com/questions/21993661/css-auto-hide-elements-after-5-seconds*/
 .small {
-    font-size: 14px;
-    color: #aac7d9;
-    margin-bottom: 10px;
+	font-size: 14px;
+	color: #aac7d9;
+	margin-bottom: 10px;
 	text-align:center;
 }
 .small .hideMe{
@@ -145,51 +89,50 @@ body{
 	text-align:left;
 }
 .hideMe {
-    -moz-animation: cssAnimation 0s ease-in 4s forwards;
-    /* Firefox */
-    -webkit-animation: cssAnimation 0s ease-in 4s forwards;
-    /* Safari and Chrome */
-    -o-animation: cssAnimation 0s ease-in 4s forwards;
-    /* Opera */
-    animation: cssAnimation 0s ease-in 4s forwards;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
+	-moz-animation: cssAnimation 0s ease-in 4s forwards;
+	/* Firefox */
+	-webkit-animation: cssAnimation 0s ease-in 4s forwards;
+	/* Safari and Chrome */
+	-o-animation: cssAnimation 0s ease-in 4s forwards;
+	/* Opera */
+	animation: cssAnimation 0s ease-in 4s forwards;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
 	text-align:center;
 }
 @keyframes cssAnimation {
-    to {
-        width:0;
-        height:0;
-        overflow:hidden;
-    }
+	to {
+		width:0;
+		height:0;
+		overflow:hidden;
+	}
 }
 @-webkit-keyframes cssAnimation {
-    to {
-        width:0;
-        height:0;
-        visibility:hidden;
-    }
+	to {
+		width:0;
+		height:0;
+		visibility:hidden;
+	}
 }
 #about .main-section p{
 	-webkit-margin-before: 1em;
-    -webkit-margin-after: 0em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
+	-webkit-margin-after: 0em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
 }
 .about_me p{
 	font-family: 'Open Sans', sans-serif;
 	line-height: 1.5;
 }
-
 /*Rounded Avatar*/
 .avatar{
 	display: block;
-    margin: 4% auto 2% auto;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    -webkit-box-shadow: 0 0 0 5px #fff, 0 0 0 6px #999, 0 10px 10px 8px rgba(0,0,0,.2);
-    -moz-box-shadow: 0 0 0 5px #fff, 0 0 0 6px #999, 0 10px 10px 8px rgba(0,0,0,.2);
+	margin: 4% auto 2% auto;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-box-shadow: 0 0 0 5px #fff, 0 0 0 6px #999, 0 10px 10px 8px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 0 0 5px #fff, 0 0 0 6px #999, 0 10px 10px 8px rgba(0,0,0,.2);
 }
 .reference{
 	text-align: center;
@@ -202,9 +145,6 @@ body{
 .reference a:visited.ui-link{
 	color: #fff;
 }
-img#ucd_logo{
-	margin-left:1%;
-}
 /*EDUCATION*/
 /*Hacky way to remove the ui-shadow*/
 .edu{
@@ -212,33 +152,12 @@ img#ucd_logo{
 }
 
 
+/*EXPERIENCE*/
 
-/*EXPERIENCE & SKILLS*/
-.skillset_para{
-	margin-bottom:5%;
-}
-.section-content .content > div {
-    padding-left: 20px;
-}
-.box {
-    border: 1px solid #89bbd3;
-    border-radius: 10px;
-    padding: 20px;
-    color: white;
-    margin-bottom: 20px;
-    transition: opacity 0.5s;
-    -webkit-transition: all ease 0.5s;
-    -moz-transition: all ease 0.5s;
-    -o-transition: all ease 0.5s;
-    -ms-transition: all ease 0.5s;
-    transition: all ease 0.5s;
-	/*Remove inherited values*/
-	text-shadow: 0 0px 0 #f3f3f3;
-}
 /*Change for hover state (BLUE)*/
 .blue-bg .box:hover {
-    border: 1px solid #fff;
-    color: white;
+	border: 1px solid #fff;
+	color: white;
 	cursor:pointer;
 	background-color:white;
 }
@@ -254,41 +173,38 @@ img#ucd_logo{
 .blue-bg .ui-link{
 	text-decoration:none;
 }
-
 /*End of hover change state for blue*/
-.content {
-    float: left;
-    width: 80%;
-}
+
 .box h2, .box img {
-    display: inline;
+	display: inline;
 }
 .blue-bg .box h2 {
-    color: white;
-    text-transform: none;
+	color: white;
+	text-transform: none;
 }
-
-
 .box h2 {
-    margin: 0;
-    font-size: 22px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 5px;
+	margin: 0;
+	font-size: 22px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 5px;
 }
 .box p {
-    color: #95c5db;
+	color: #95c5db;
 }
 .blue-bg .box p {
-    color: #deeef5;
+	color: #deeef5;
 }
 .content p {
-    margin: 0;
-    font-size: 18px;
-    color: white;
-    line-height: 30px;
-    letter-spacing: 1px;
+	margin: 0;
+	font-size: 18px;
+	color: white;
+	line-height: 30px;
+	letter-spacing: 1px;
 }
+
+/*SKILLS*/
+
 /*PROJECTS*/
 #projects .box h2{
 	color: #52acd1;
@@ -297,12 +213,12 @@ img#ucd_logo{
 	color: #fff;
 }
 .white-bg .box p {
-    color: #a3d0e3;
+	color: #a3d0e3;
 }
 /*Change for hover state (WHITE)*/
 .white-bg .box:hover {
-    border: 1px solid #3295be;
-    color: white;
+	border: 1px solid #3295be;
+	color: white;
 	cursor:pointer;
 	background-color: #3295be;
 }
@@ -323,40 +239,180 @@ img#ucd_logo{
 }
 /*End of hover change state for white*/
 
+
 /*SOCIAL*/
-#twitterbackdrop{
-	background-repeat: no-repeat;
-    background-image: url(../images/social/apple-computer_550.png);
-    margin-top: 0px;
-    margin-left: 0px;
-    height: 60%;
-    width: 37%;
-    top: 17%;
-    left: 24%;
-    position: absolute;
-	margin-bottom:30%;
+
+
+
+
+
+
+
+
+/*****************/
+/*LARGE DESKTOPS*/
+/***************/
+@media (min-width: 1200px){
+
+	/*Blue and White Sections*/
+	.title {
+		float: left;
+		width: 20%;
+		margin-bottom: 2%;
+	}
+	.spaced-title{
+		float: left;
+		width: 100%;
+		margin-bottom: 2%;
+	}
+	/*Main Section*/
+	.main-section {
+		background: rgba(34,125,170,1);
+		background: -moz-linear-gradient(top, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
+		background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(34,125,170,1)), color-stop(100%, rgba(81,172,205,1)));
+		background: -webkit-linear-gradient(top, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
+		background: -o-linear-gradient(top, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
+		background: -ms-linear-gradient(top, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
+		background: linear-gradient(to bottom, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
+		display: table;
+		width: 100%;
+		height: 700px;
+		position: relative;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		color: white;
+	}
+	.main-section h1 {
+		font-size: 60px;
+	}
+	.main-section > .section-content {
+		display: table-cell;
+		vertical-align: middle;
+		padding: 10px 100px;
+		text-align: left;
+	}
+	.main-section h1:after {
+		content: ' ';
+		display: block;
+		width: 50px;
+		margin: 10px 0 -10px 48%;
+		border: 2px solid #fff;
+	}
+	.main-section p {
+		font-size: 20px;
+		color: #deeef5;
+		letter-spacing: 1px;
+		text-align:center;
+	}
+	.section-content {
+		padding: 100px 100px;
+		display: block;
+		overflow: auto;
+	}
+
+
+	/*ABOUT*/
+	/*Ninja Text*/
+	/*SOURCE: http://stackoverflow.com/questions/21993661/css-auto-hide-elements-after-5-seconds*/
+
+
+
+	img#ucd_logo{
+		margin-left:1%;
+	}
+	/*EDUCATION*/
+	
+
+
+
+	/*EXPERIENCE*/ 
+	.box {
+		border: 1px solid #89bbd3;
+		border-radius: 10px;
+		padding: 20px;
+		color: white;
+		margin-bottom: 20px;
+		transition: opacity 0.5s;
+		-webkit-transition: all ease 0.5s;
+		-moz-transition: all ease 0.5s;
+		-o-transition: all ease 0.5s;
+		-ms-transition: all ease 0.5s;
+		transition: all ease 0.5s;
+		/*Remove inherited values*/
+		text-shadow: 0 0px 0 #f3f3f3;
+	}
+	.content {
+		float: left;
+		width: 80%;
+	}
+	/*SKILLS*/
+	.skillset_para{
+		margin-bottom:5%;
+	}
+	.section-content .content > div {
+		padding-left: 20px;
+	}
+
+	/*PROJECTS*/
+	
+
+	/*SOCIAL*/
+	#twitterbackdrop{
+		background-repeat: no-repeat;
+		background-image: url(../images/social/apple-computer_550.png);
+		margin-top: 0px;
+		margin-left: 0px;
+		height: 60%;
+		width: 37%;
+		top: 17%;
+		left: 24%;
+		position: absolute;
+		margin-bottom:30%;
+	}
+	#twitter_content{
+		margin-top: 0px;
+		margin-left: 0px;
+		width: 510px;
+		z-index: 6;
+		top: 0;
+		left: 0;
+		position: relative;
+		overflow: hidden;
+		height: 43%;
+
+	}
+
+	#twitter-widget-0 {
+		height:320px !important;
+		width: 510px !important;
+
+	}
 }
-#twitter_content{
-    margin-top: 0px;
-    margin-left: 0px;
-    width: 510px;
-    z-index: 6;
-    top: 0;
-    left: 0;
-    position: relative;
-    overflow: hidden;
-    height: 43%;
 
+
+
+
+/*****************/
+/*SMALL DESKTOPS*/
+/***************/
+@media (min-width: 992px) and (max-width: 1200px) {
+	
+	
 }
 
-#twitter-widget-0 {
-	height:320px !important;
-	width: 510px !important;
-
+/**********/
+/*TABLETS*/
+/********/
+@media (min-width: 768px) and (max-width: 992px) {
+	
 }
 
-/*MOBILE*/
-@media screen and (max-width: 480px) {
+/**********/
+/*MOBILE**/
+/********/
+@media screen and (max-width: 768px) {
 	img#ucd_logo{
 		margin-left:4%;
 	}

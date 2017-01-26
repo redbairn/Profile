@@ -174,7 +174,10 @@ body{
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
 }
-
+.about_me p{
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.5;
+}
 
 /*Rounded Avatar*/
 .avatar{

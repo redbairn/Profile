@@ -3,6 +3,8 @@
 *2/ABOUT
 *3/EXPERIENCE & SKILLS
 *4/PROJECTS
+*5/SOCIAL
+*6/MOBILE LAYOUT
 ***************************/
 
 /*GENERAL*/
@@ -321,6 +323,28 @@ img#ucd_logo{
 }
 /*End of hover change state for white*/
 
+/*SOCIAL*/
+#twitterbackdrop{
+	background-repeat: no-repeat;
+    background-image: url(../images/social/apple-computer_550.png);
+    margin-top: 0px;
+    margin-left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    top: 15%;
+    left: 24%;
+    position: absolute;
+}
+#twitter_content{
+	margin-bottom:20%;
+}
+
+#twitter-widget-0 {
+	height:330px !important;
+	width: 510px !important;
+
+}
 
 /*MOBILE*/
 @media screen and (max-width: 480px) {
@@ -354,5 +378,25 @@ img#ucd_logo{
 	}
 	.section-content .content > div {
 		padding-left: 0px;
+	}
+	#twitterbackdrop{
+		background-repeat: no-repeat;
+		background-image: url(../images/social/apple-computer_390.png);
+		margin-top: 0px;
+		margin-left: 0px;
+		height: 100%;
+		width: 100%;
+		z-index: 1;
+		top: 29%;
+		left: 0px;
+		position: absolute;
+	}
+	#twitter_content{
+		margin-bottom:25%;
+	}
+	#twitter-widget-0 {
+		margin-top: 10% !important;
+		width:365px !important;
+		height:250px !important;
 	}
 }

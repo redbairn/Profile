@@ -29,6 +29,64 @@ body{
 	text-align:center;
 }
 /*Blue and White Sections*/
+.title {
+	float: left;
+	width: 20%;
+	margin-bottom: 2%;
+}
+.spaced-title{
+	float: left;
+	width: 100%;
+	margin-bottom: 2%;
+}
+/*Main Section*/
+.main-section {
+	background: rgba(34,125,170,1);
+	background: -moz-linear-gradient(top, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(34,125,170,1)), color-stop(100%, rgba(81,172,205,1)));
+	background: -webkit-linear-gradient(top, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
+	background: -o-linear-gradient(top, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
+	background: -ms-linear-gradient(top, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
+	background: linear-gradient(to bottom, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
+	display: table;
+	width: 100%;
+	height: 700px;
+	position: relative;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: white;
+}
+.main-section h1 {
+	font-size: 60px;
+}
+.main-section > .section-content {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 10px 100px;
+	text-align: left;
+}
+.main-section h1:after {
+	content: ' ';
+	display: block;
+	width: 50px;
+	margin: 10px 0 -10px 48%;
+	border: 2px solid #fff;
+}
+.main-section p {
+	font-size: 20px;
+	color: #deeef5;
+	letter-spacing: 1px;
+	text-align:center;
+}
+.section-content {
+	padding: 100px 100px;
+	display: block;
+	overflow: auto;
+}
+
+/*Blue and White Sections*/
 .section {
 	display: block;
 }
@@ -153,6 +211,25 @@ body{
 
 
 /*EXPERIENCE*/
+.box {
+	border: 1px solid #89bbd3;
+	border-radius: 10px;
+	padding: 20px;
+	color: white;
+	margin-bottom: 20px;
+	transition: opacity 0.5s;
+	-webkit-transition: all ease 0.5s;
+	-moz-transition: all ease 0.5s;
+	-o-transition: all ease 0.5s;
+	-ms-transition: all ease 0.5s;
+	transition: all ease 0.5s;
+	/*Remove inherited values*/
+	text-shadow: 0 0px 0 #f3f3f3;
+}
+.content {
+	float: left;
+	width: 80%;
+}
 
 /*Change for hover state (BLUE)*/
 .blue-bg .box:hover {
@@ -204,7 +281,12 @@ body{
 }
 
 /*SKILLS*/
-
+.skillset_para{
+	margin-bottom:5%;
+}
+.section-content .content > div {
+	padding-left: 20px;
+}
 /*PROJECTS*/
 #projects .box h2{
 	color: #52acd1;
@@ -253,72 +335,7 @@ body{
 /*LARGE DESKTOPS*/
 /***************/
 @media (min-width: 1200px){
-
-	/*Blue and White Sections*/
-	.title {
-		float: left;
-		width: 20%;
-		margin-bottom: 2%;
-	}
-	.spaced-title{
-		float: left;
-		width: 100%;
-		margin-bottom: 2%;
-	}
-	/*Main Section*/
-	.main-section {
-		background: rgba(34,125,170,1);
-		background: -moz-linear-gradient(top, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
-		background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(34,125,170,1)), color-stop(100%, rgba(81,172,205,1)));
-		background: -webkit-linear-gradient(top, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
-		background: -o-linear-gradient(top, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
-		background: -ms-linear-gradient(top, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
-		background: linear-gradient(to bottom, rgba(34,125,170,1) 0%, rgba(81,172,205,1) 100%);
-		display: table;
-		width: 100%;
-		height: 700px;
-		position: relative;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-		color: white;
-	}
-	.main-section h1 {
-		font-size: 60px;
-	}
-	.main-section > .section-content {
-		display: table-cell;
-		vertical-align: middle;
-		padding: 10px 100px;
-		text-align: left;
-	}
-	.main-section h1:after {
-		content: ' ';
-		display: block;
-		width: 50px;
-		margin: 10px 0 -10px 48%;
-		border: 2px solid #fff;
-	}
-	.main-section p {
-		font-size: 20px;
-		color: #deeef5;
-		letter-spacing: 1px;
-		text-align:center;
-	}
-	.section-content {
-		padding: 100px 100px;
-		display: block;
-		overflow: auto;
-	}
-
-
 	/*ABOUT*/
-	/*Ninja Text*/
-	/*SOURCE: http://stackoverflow.com/questions/21993661/css-auto-hide-elements-after-5-seconds*/
-
-
-
 	img#ucd_logo{
 		margin-left:1%;
 	}
@@ -328,32 +345,9 @@ body{
 
 
 	/*EXPERIENCE*/ 
-	.box {
-		border: 1px solid #89bbd3;
-		border-radius: 10px;
-		padding: 20px;
-		color: white;
-		margin-bottom: 20px;
-		transition: opacity 0.5s;
-		-webkit-transition: all ease 0.5s;
-		-moz-transition: all ease 0.5s;
-		-o-transition: all ease 0.5s;
-		-ms-transition: all ease 0.5s;
-		transition: all ease 0.5s;
-		/*Remove inherited values*/
-		text-shadow: 0 0px 0 #f3f3f3;
-	}
-	.content {
-		float: left;
-		width: 80%;
-	}
+
 	/*SKILLS*/
-	.skillset_para{
-		margin-bottom:5%;
-	}
-	.section-content .content > div {
-		padding-left: 20px;
-	}
+
 
 	/*PROJECTS*/
 	
@@ -429,9 +423,6 @@ body{
 		padding: 10px;
 		display: block;
 		overflow: auto;
-	}
-	.paragraph-section{
-		padding:0;
 	}
 	.title {
 		float: left;

@@ -431,6 +431,31 @@ body{
 		height:330px !important;
 		width: 510px !important;
 	}
+	/*#github_octocat{
+		margin-top: 0px;
+		margin-left: 0px;
+		width: 100%;
+		z-index: 6;
+		top: 0;
+		left: 50%;
+		position: relative;
+		overflow: hidden;
+		height: 5%;
+	}
+	#githubbackdrop{
+		background-repeat: no-repeat;
+		background-image: url(../images/social/social-cup.png);
+		margin-top: 0px;
+		margin-left: 0px;
+		height: 100%;
+		width: 37%;
+		top: 17%;
+		left: 60%;
+		position: absolute;
+	}*/
+	
+	
+	
 
 
 

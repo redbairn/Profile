@@ -6,8 +6,8 @@
 *-1d/SKILLS
 *-1e/PROJECTS
 *-1f/SOCIAL
-*2/-LARGE DESKTOPS
-*3/-SMALL DESKTOPS
+*2/-DESKTOPS
+*3/-LAPTOPS
 *4/-TABLETS
 *5/-MOBILE
 ***************************/
@@ -325,16 +325,11 @@ body{
 /*SOCIAL*/
 
 
-
-
-
-
-
-
 /*****************/
 /*LARGE DESKTOPS*/
 /***************/
-@media (min-width: 1200px){
+/*XXLarge screens*/
+@media only screen and (min-width: 120.063em) { 
 	/*ABOUT*/
 	img#ucd_logo{
 		margin-left:1%;
@@ -358,12 +353,11 @@ body{
 		background-image: url(../images/social/apple-computer_550.png);
 		margin-top: 0px;
 		margin-left: 0px;
-		height: 60%;
+		height: 100%;
 		width: 37%;
-		top: 17%;
+		top: 12%;
 		left: 24%;
 		position: absolute;
-		margin-bottom:30%;
 	}
 	#twitter_content{
 		margin-top: 0px;
@@ -375,38 +369,185 @@ body{
 		position: relative;
 		overflow: hidden;
 		height: 43%;
-
+		margin-bottom:5%;
 	}
 
 	#twitter-widget-0 {
-		height:320px !important;
+		height:330px !important;
 		width: 510px !important;
-
 	}
-}
+} /* min-width 1921px, xxlarge screens */
+
+
+/***********/
+/*DESKTOPS*/
+/*********/
+/*XLarge screens*/
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { 
+	/*ABOUT*/
+	img#ucd_logo{
+		margin-left:1%;
+	}
+	/*EDUCATION*/
+	
 
 
 
+	/*EXPERIENCE*/ 
 
-/*****************/
-/*SMALL DESKTOPS*/
-/***************/
-@media (min-width: 992px) and (max-width: 1200px) {
+	/*SKILLS*/
+
+
+	/*PROJECTS*/
 	
 	
-}
+	
+	/*SOCIAL*/
+	#twitterbackdrop{
+		background-repeat: no-repeat;
+		background-image: url(../images/social/apple-computer_550.png);
+		margin-top: 0px;
+		margin-left: 0px;
+		height: 100%;
+		width: 37%;
+		top: 17%;
+		left: 24%;
+		position: absolute;
+	}
+	#twitter_content{
+		margin-top: 0px;
+		margin-left: 0px;
+		width: 510px;
+		z-index: 6;
+		top: 0;
+		left: 0;
+		position: relative;
+		overflow: hidden;
+		height: 43%;
+		margin-bottom:5%;
+	}
+
+	#twitter-widget-0 {
+		height:330px !important;
+		width: 510px !important;
+	}
+
+
+
+} /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+
+
+
+/**********/
+/*LAPTOPS*/
+/********/
+/*Large screens*/
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { 
+	/*ABOUT*/
+	img#ucd_logo{
+		margin-left:1%;
+	}
+	/*EDUCATION*/
+	
+
+
+
+	/*EXPERIENCE*/ 
+
+	/*SKILLS*/
+
+
+	/*PROJECTS*/
+	
+	/*SOCIAL*/
+	#twitterbackdrop{
+		background-repeat: no-repeat;
+		background-image: url(../images/social/apple-computer_550.png);
+		margin-top: 0px;
+		margin-left: 0px;
+		height: 100%;
+		width: 100%;
+		top: 16%;
+		left: 25%;
+		position: absolute;
+	}
+	#twitter_content{
+		margin-top: 0px;
+		margin-left: 0px;
+		width: 510px;
+		z-index: 6;
+		top: 0;
+		left: 0;
+		position: relative;
+		overflow: hidden;
+		height: 43%;
+		margin-bottom:5%;
+	}
+
+	#twitter-widget-0 {
+		height:330px !important;
+		width: 510px !important;
+	}
+} /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
 
 /**********/
 /*TABLETS*/
 /********/
-@media (min-width: 768px) and (max-width: 992px) {
+/*Medium screens*/
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+	img#ucd_logo{
+		margin-left:2%;
+	}
+		/*EDUCATION*/
 	
-}
+
+
+
+	/*EXPERIENCE*/ 
+
+	/*SKILLS*/
+
+
+	/*PROJECTS*/
+	
+	/*SOCIAL*/
+	#twitterbackdrop{
+		background-repeat: no-repeat;
+		background-image: url(../images/social/apple-computer_550.png);
+		margin-top: 0px;
+		margin-left: 0px;
+		height: 100%;
+		width: 100%;
+		top: 17%;
+		left: 27%;
+		position: absolute;
+	}
+	#twitter_content{
+		margin-top: 0px;
+		margin-left: 0px;
+		width: 510px;
+		z-index: 6;
+		top: 0;
+		left: 0;
+		position: relative;
+		overflow: hidden;
+		height: 43%;
+		margin-bottom:5%;
+	}
+
+	#twitter-widget-0 {
+		height:330px !important;
+		width: 510px !important;
+	}
+
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
 /**********/
 /*MOBILE**/
 /********/
-@media screen and (max-width: 768px) {
+/*Small Screens*/
+@media only screen and (max-width: 40em) {
 	img#ucd_logo{
 		margin-left:4%;
 	}
@@ -443,16 +584,25 @@ body{
 		height: 45%;
 		width: 95%;
 		z-index: 1;
-		top: 30%;
-		left: 0px;
+		top: 27%;
+		left: 3%;
 		position: absolute;
 	}
 	#twitter_content{
+		margin-top: 0px;
+		margin-left: 0px;
+		width: 510px;
+		z-index: 6;
+		top: 0;
+		left: 5%;
+		position: relative;
+		overflow: hidden;
+		height: 43%;
 		margin-bottom:25%;
 	}
 	#twitter-widget-0 {
 		margin-top: 10% !important;
-		width:365px !important;
-		height:250px !important;
+		width:360px !important;
+		height:225px !important;
 	}
 }

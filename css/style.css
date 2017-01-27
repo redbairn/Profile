@@ -451,8 +451,14 @@ body{
 		left: 80%;
 		position: absolute;
 	}
-	
-	
+	#stackoverflowbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		height: 100%;
+		top: 70%;
+		left: 5%;
+		position: absolute;
+	}
 
 
 

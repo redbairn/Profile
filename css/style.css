@@ -436,12 +436,21 @@ body{
 	#githubbackdrop{
 		margin-top: 0px;
 		margin-left: 0px;
-		height: 100%;
-		top: 65%;
+		height: 20%;
+		witdth:30%;
+		top: 70%;
 		left: 70%;
 		position: absolute;
+		margin-bottom:2%;
 	}
-	
+	#linkedinbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		height: 100%;
+		top: 30%;
+		left: 80%;
+		position: absolute;
+	}
 	
 	
 

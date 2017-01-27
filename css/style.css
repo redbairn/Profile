@@ -410,14 +410,14 @@ body{
 		margin-left: 0px;
 		height: 100%;
 		width: 37%;
-		top: 17%;
+		top: 15%;
 		left: 24%;
 		position: absolute;
 	}
 	#twitter_content{
 		margin-top: 0px;
 		margin-left: 0px;
-		width: 510px;
+		width: 550px;
 		z-index: 6;
 		top: 0;
 		left: 0;

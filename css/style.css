@@ -975,8 +975,8 @@ body{
 		z-index: 5;
 		height: 60%;
 		width: 100%;
-		top: 37%;/*Do not change*/
-		left: 2%;
+		top: 36%;/*Do not change*/
+		left: 0;
 		position: absolute;
 	}
 	#twitter_content{
@@ -985,7 +985,7 @@ body{
 		width: 520px;
 		z-index: 6;
 		top: 0;
-		left: 3%;
+		left: 2%;
 		position: relative;
 		overflow: hidden;
 		height: 43%;
@@ -994,7 +994,7 @@ body{
 	}
 	#twitter-widget-0 {
 		height:200px !important;
-		width: 320px !important;
+		width: 280px !important;
 	}
 	#githubbackdrop{
 		margin-top: 0px;

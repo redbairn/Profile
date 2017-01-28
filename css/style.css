@@ -18,12 +18,13 @@
 body{
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	margin:0;
+	font-size:16px;
 }
 .bottom-nav-w{
 	background:white;
 }
 .bottom-nav-b{
-	background:#3295be;
+	background:#4DA8CA;
 }
 #my_title{
 	text-align:center;
@@ -325,11 +326,11 @@ body{
 /*SOCIAL*/
 
 
-/*****************/
-/*LARGE DESKTOPS*/
-/***************/
+/******************/
+/*HI-RES DESKTOPS*/
+/****************/
 /*XXLarge screens*/
-@media only screen and (min-width: 120.063em) { 
+@media screen and (min-width: 120.063em) { 
 	/*ABOUT*/
 	img#ucd_logo{
 		margin-left:1%;
@@ -353,76 +354,11 @@ body{
 		background-image: url(../images/social/apple-computer_550.png);
 		margin-top: 0px;
 		margin-left: 0px;
-		z-index: 6;
-		height: 100%;
-		width: 37%;
-		top: 15%;
-		left: 24%;
-		position: absolute;
-	}
-	#twitter_content{
-		margin-top: 0px;
-		margin-left: 0px;
-		width: 510px;
-		z-index: 5;
-		top: 0;
-		left: 0;
-		position: relative;
-		overflow: hidden;
-		height: 43%;
-		margin-bottom:5%;
-	}
-
-	#twitter-widget-0 {
-		height:330px !important;
-		width: 510px !important;
-	}
-} /* min-width 1921px, xxlarge screens */
-
-
-/***********/
-/*DESKTOPS*/
-/*********/
-/*XLarge screens*/
-@media only screen and (min-width: 90.063em) and (max-width: 120em) { 
-	/*ABOUT*/
-	img#ucd_logo{
-		margin-left:1%;
-	}
-	/*EDUCATION*/
-	
-
-
-
-	/*EXPERIENCE*/ 
-
-	/*SKILLS*/
-
-
-	/*PROJECTS*/
-	
-	
-	
-	/*SOCIAL*/
-	#social .title {
-		float: left;
-		width: 100%;
-	}
-	.content {
-		float: left;
-		width: 100%;
-	}
-	/*Can't move around the background as the Twitter feed is stuck in place under the Content section*/
-	#twitterbackdrop{
-		background-repeat: no-repeat;
-		background-image: url(../images/social/apple-computer_550.png);
-		margin-top: 0px;
-		margin-left: 0px;
 		z-index: 5;
 		height: 100%;
 		width: 37%;
-		top: 32%;/*Do not change*/
-		left: 24%;
+		top: 25%;
+		left: 15%;
 		position: absolute;
 	}
 	#twitter_content{
@@ -471,18 +407,14 @@ body{
 		border: 0;
 		box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
 	}
+} /* min-width 1921px, xxlarge screens */
 
 
-} /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
-
-
-
-
-/**********/
-/*LAPTOPS*/
-/********/
-/*Large screens*/
-@media only screen and (min-width: 64.063em) and (max-width: 90em) { 
+/***********/
+/*DESKTOPS*/
+/*********/
+/*XLarge screens (1600px-1920px)*/
+@media screen and (min-width: 100em) and (max-width: 120em) { 
 	/*ABOUT*/
 	img#ucd_logo{
 		margin-left:1%;
@@ -499,47 +431,87 @@ body{
 
 	/*PROJECTS*/
 	
+	
+	
 	/*SOCIAL*/
+	#social .title {
+		float: left;
+		width: 100%;
+	}
+	.content {
+		float: left;
+		width: 100%;
+	}
+	/*Can't move around the background as the Twitter feed is stuck in place under the Content section*/
 	#twitterbackdrop{
 		background-repeat: no-repeat;
 		background-image: url(../images/social/apple-computer_550.png);
 		margin-top: 0px;
 		margin-left: 0px;
 		z-index: 5;
-		height: 100%;
-		width: 100%;
-		top: 16%;
-		left: 25%;
+		height: 55%;
+		width: 37%;
+		top: 28%;/*Do not change*/
+		left: 23%;
 		position: absolute;
 	}
 	#twitter_content{
 		margin-top: 0px;
 		margin-left: 0px;
-		width: 510px;
+		width: 550px;
 		z-index: 6;
 		top: 0;
-		left: 0;
+		left: 20%;
 		position: relative;
 		overflow: hidden;
 		height: 43%;
-		margin-bottom:5%;
+		margin-bottom:6%;
 	}
-
 	#twitter-widget-0 {
 		height:330px !important;
 		width: 510px !important;
 	}
-} /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
-
-/**********/
-/*TABLETS*/
-/********/
-/*Medium screens*/
-@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
-	img#ucd_logo{
-		margin-left:2%;
+	#githubbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		width:30%;
+		top: 70%;
+		left: 70%;
+		position: absolute;
 	}
-		/*EDUCATION*/
+	#linkedinbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		top: 30%;
+		left: 80%;
+		position: absolute;
+	}
+	#stackoverflowbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		top: 70%;
+		left: 5%;
+		position: absolute;
+	}
+	#border_table{
+		height: 22px;
+		border: 0;
+		box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+	}
+
+
+} /* min-width 1600px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+/***********/
+/*DESKTOPS*/
+/*********/
+/*XLarge screens (1441px-1600px)*/
+@media screen and (min-width: 90.063em) and (max-width: 100em) { 
+	/*ABOUT*/
+	img#ucd_logo{
+		margin-left:1%;
+	}
+	/*EDUCATION*/
 	
 
 
@@ -551,44 +523,271 @@ body{
 
 	/*PROJECTS*/
 	
+	
+	
 	/*SOCIAL*/
+	#social .title {
+		float: left;
+		width: 100%;
+	}
+	.content {
+		float: left;
+		width: 100%;
+	}
+	/*Can't move around the background as the Twitter feed is stuck in place under the Content section*/
 	#twitterbackdrop{
 		background-repeat: no-repeat;
 		background-image: url(../images/social/apple-computer_550.png);
 		margin-top: 0px;
 		margin-left: 0px;
 		z-index: 5;
-		height: 100%;
-		width: 100%;
-		top: 17%;
-		left: 27%;
+		height: 55%;
+		width: 37%;
+		top: 28%;/*Do not change*/
+		left: 23%;
 		position: absolute;
 	}
 	#twitter_content{
 		margin-top: 0px;
 		margin-left: 0px;
-		width: 510px;
+		width: 520px;
 		z-index: 6;
 		top: 0;
-		left: 0;
+		left: 20%;
 		position: relative;
 		overflow: hidden;
 		height: 43%;
 		margin-bottom:5%;
 	}
-
 	#twitter-widget-0 {
 		height:330px !important;
 		width: 510px !important;
 	}
+	#githubbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		height: 20%;
+		width:30%;
+		top: 70%;
+		left: 70%;
+		position: absolute;
+	}
+	#linkedinbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		height: 100%;
+		top: 30%;
+		left: 80%;
+		position: absolute;
+	}
+	#stackoverflowbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		height: 100%;
+		top: 70%;
+		left: 5%;
+		position: absolute;
+	}
+	#border_table{
+		height: 22px;
+		border: 0;
+		box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+	}
+}/* min-width 1441px and max-width 1600px, use when QAing xlarge screen-only issues */
 
+
+
+/**********/
+/*LAPTOPS*/
+/********/
+/*Large screens*/
+@media screen and (min-width: 64.063em) and (max-width: 90em) { 
+	/*ABOUT*/
+	img#ucd_logo{
+		margin-left:1%;
+	}
+	/*EDUCATION*/
+	
+
+
+
+	/*EXPERIENCE*/ 
+
+	/*SKILLS*/
+
+
+	/*PROJECTS*/
+	
+	
+	
+	/*SOCIAL*/
+	#social .title {
+		float: left;
+		width: 100%;
+	}
+	.content {
+		float: left;
+		width: 100%;
+	}
+	/*Can't move around the background as the Twitter feed is stuck in place under the Content section*/
+	#twitterbackdrop{
+		background-repeat: no-repeat;
+		background-image: url(../images/social/apple-computer_550.png);
+		margin-top: 0px;
+		margin-left: 0px;
+		z-index: 5;
+		height: 55%;
+		width: 100%;
+		top: 28%;/*Do not change*/
+		left: 24%;
+		position: absolute;
+	}
+	#twitter_content{
+		margin-top: 0px;
+		margin-left: 0px;
+		width: 520px;
+		z-index: 6;
+		top: 0;
+		left: 20%;
+		position: relative;
+		overflow: hidden;
+		height: 43%;
+		margin-bottom:8%;
+	}
+	#twitter-widget-0 {
+		height:330px !important;
+		width: 510px !important;
+	}
+	#githubbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		width:30%;
+		top: 70%;
+		left: 70%;
+		position: absolute;
+	}
+	#linkedinbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		top: 30%;
+		left: 80%;
+		position: absolute;
+	}
+	#stackoverflowbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		top: 70%;
+		left: 5%;
+		position: absolute;
+	}
+	#border_table{
+		height: 22px;
+		border: 0;
+		box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+	}
+} /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+
+/**********/
+/*TABLETS*/
+/********/
+/*Medium screens*/
+@media screen and (min-width: 40.063em) and (max-width: 64em) { 
+	/*ABOUT*/
+	img#ucd_logo{
+		margin-left:2%;
+	}
+	/*EDUCATION*/
+	
+
+
+
+	/*EXPERIENCE*/ 
+
+	/*SKILLS*/
+
+
+	/*PROJECTS*/
+	
+	
+	
+	/*SOCIAL*/
+	#social .title {
+		float: left;
+		width: 100%;
+	}
+	.content {
+		float: left;
+		width: 100%;
+	}
+	/*Can't move around the background as the Twitter feed is stuck in place under the Content section*/
+	#twitterbackdrop{
+		background-repeat: no-repeat;
+		background-image: url(../images/social/apple-computer_550.png);
+		margin-top: 0px;
+		margin-left: 0px;
+		z-index: 5;
+		height: 55%;
+		width: 55%;
+		top: 27%;/*Do not change*/
+		left: 26%;
+		position: absolute;
+	}
+	#twitter_content{
+		margin-top: 0px;
+		margin-left: 0px;
+		width: 520px;
+		z-index: 6;
+		top: 0;
+		left: 20%;
+		position: relative;
+		overflow: hidden;
+		height: 43%;
+		margin-bottom:10%;
+	}
+	#twitter-widget-0 {
+		height:330px !important;
+		width: 520px !important;
+	}
+	#githubbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		z-index: 4;
+		width:50%;
+		top: 70%;
+		left: 80%;
+		position: absolute;
+	}
+	#linkedinbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		top: 30%;
+		left: 85%;
+		position: absolute;
+	}
+	#linkedinbackdrop img{
+		width:80%;
+	}
+	
+	#stackoverflowbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		top: 70%;
+		left: 5%;
+		position: absolute;
+	}
+	#border_table{
+		height: 22px;
+		border: 0;
+		box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+	}
 } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
 /**********/
 /*MOBILE**/
 /********/
 /*Small Screens*/
-@media only screen and (max-width: 40em) {
+@media screen and (max-width: 40em) {
+	/*EDUCATION*/
 	img#ucd_logo{
 		margin-left:4%;
 	}
@@ -617,33 +816,101 @@ body{
 	.section-content .content > div {
 		padding-left: 0px;
 	}
+
+	
+
+
+
+	/*EXPERIENCE*/ 
+
+	/*SKILLS*/
+
+
+	/*PROJECTS*/
+	
+	
+	
+	/*SOCIAL*/
+	#social .title {
+		float: left;
+		width: 100%;
+	}
+	.content {
+		float: left;
+		width: 100%;
+	}
+	/*Can't move around the background as the Twitter feed is stuck in place under the Content section*/
 	#twitterbackdrop{
 		background-repeat: no-repeat;
 		background-image: url(../images/social/apple-computer_390.png);
 		margin-top: 0px;
 		margin-left: 0px;
-		height: 45%;
-		width: 95%;
 		z-index: 5;
-		top: 27%;
-		left: 3%;
+		height: 60%;
+		width: 100%;
+		top: 36%;/*Do not change*/
+		left: 8%;
 		position: absolute;
 	}
 	#twitter_content{
 		margin-top: 0px;
 		margin-left: 0px;
-		width: 510px;
+		width: 520px;
 		z-index: 6;
 		top: 0;
-		left: 5%;
+		left: 10%;
 		position: relative;
 		overflow: hidden;
 		height: 43%;
-		margin-bottom:25%;
+		margin-bottom:8%;
+		margin-top:20%;
 	}
 	#twitter-widget-0 {
-		margin-top: 10% !important;
-		width:360px !important;
-		height:225px !important;
+		height:230px !important;
+		width: 360px !important;
+	}
+	#githubbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		z-index: 7;
+		width:50%;
+		top: 70%;
+		left: 80%;
+		position: absolute;
+	}
+	#githubbackdrop img{
+		width:50%;
+	}
+	#linkedinbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		top: 10%;
+		left: 50%;
+		position: absolute;
+	}
+	#linkedinbackdrop img{
+		width:80%;
+	}
+	#stackoverflowbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		z-index: 8;
+		top: 70%;
+		left: 5%;
+		position: absolute;
+	}
+	#stackoverflowbackdrop img{
+		margin-top:10%;
+		width:30%;
+	}
+	
+	#border_table{
+		margin-top:10%;
+		height: 22px;
+		border: 0;
+		box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+	}
+	.social-push{
+		margin-bottom:10%;
 	}
 }

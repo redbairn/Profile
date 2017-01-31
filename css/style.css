@@ -925,11 +925,132 @@ body{
 		margin-bottom:10%;
 	}
 }
+/*LANDSCAPE (Large Smart Phones)*/
+@media screen and (min-width: 30em) and (max-width: 40.063em) and (orientation: landscape) { 
+	/*EDUCATION*/
+	img#ucd_logo{
+		margin-left:4%;
+	}
+	.main-section h1:after {
+		margin: 10px 0 -10px 42%;
+	}
+	.main-section > .section-content {
+		display: table-cell;
+		vertical-align: middle;
+		padding: 10px;
+		text-align: left;
+	}
+	.section-content {
+		padding: 10px;
+		display: block;
+		overflow: auto;
+	}
+	.title {
+		float: left;
+		width: 100%;
+		margin-top: 10%; 
+	}
+	.content{
+		width:100%;
+	}
+	.section-content .content > div {
+		padding-left: 0px;
+	}
+	/*EXPERIENCE*/ 
+
+	/*SKILLS*/
+
+
+	/*PROJECTS*/
+
+	/*SOCIAL*/
+	#social .title {
+		float: left;
+		width: 100%;
+	}
+	.content {
+		float: left;
+		width: 100%;
+	}
+	#twitterbackdrop{
+		background-repeat: no-repeat;
+		background-image: url(../images/social/apple-computer_390.png);
+		margin-top: 0px;
+		margin-left: 0px;
+		z-index: 5;
+		height: 52%;
+		width: 100%;
+		top: 39%;/*Do not change*/
+		left: 2%;
+		position: absolute;
+	}
+	#twitter_content{
+		margin-top: 0px;
+		margin-left: 0px;
+		width: 520px;
+		z-index: 6;
+		top: 0;
+		left: 2%;
+		position: relative;
+		overflow: hidden;
+		height: 43%;
+		margin-bottom:5%;
+		margin-top:20%;
+	}
+	#twitter-widget-0 {
+		height:230px !important;
+		width: 370px !important;
+	}
+	#githubbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		z-index: 7;
+		width:50%;
+		top: 70%;
+		left: 70%;
+		position: absolute;
+	}
+	#githubbackdrop img{
+		width:50%;
+	}
+	#linkedinbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		top: 10%;
+		left: 55%;
+		position: absolute;
+	}
+	#linkedinbackdrop img{
+		width:50%;
+	}
+	#stackoverflowbackdrop{
+		margin-top: 0px;
+		margin-left: 0px;
+		z-index: 8;
+		top: 72%;
+		left: 5%;
+		position: absolute;
+	}
+	#stackoverflowbackdrop img{
+		margin-top:10%;
+		width:30%;
+	}
+	
+	#border_table{
+		margin-top:10%;
+		height: 22px;
+		border: 0;
+		box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+	}
+	.social-push{
+		margin-bottom:10%;
+	}
+}/*Ex.800x480 - OnePlus 3*/
 /**********/
 /*MOBILE**/
 /********/
 /*Smaller Mobile Screens*/
-@media screen and (max-width: 30em) and (orientation: portrait) { 
+@media screen and (max-width: 30em) { 
 	/*EDUCATION*/
 	img#ucd_logo{
 		margin-left:4%;
@@ -1028,126 +1149,6 @@ body{
 	}
 	#linkedinbackdrop img{
 		width:80%;
-	}
-	#stackoverflowbackdrop{
-		margin-top: 0px;
-		margin-left: 0px;
-		z-index: 8;
-		top: 72%;
-		left: 5%;
-		position: absolute;
-	}
-	#stackoverflowbackdrop img{
-		margin-top:10%;
-		width:30%;
-	}
-	
-	#border_table{
-		margin-top:10%;
-		height: 22px;
-		border: 0;
-		box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
-	}
-	.social-push{
-		margin-bottom:10%;
-	}
-}
-@media screen and (max-width: 30em) and (orientation: landscape) { 
-	/*EDUCATION*/
-	img#ucd_logo{
-		margin-left:4%;
-	}
-	.main-section h1:after {
-		margin: 10px 0 -10px 42%;
-	}
-	.main-section > .section-content {
-		display: table-cell;
-		vertical-align: middle;
-		padding: 10px;
-		text-align: left;
-	}
-	.section-content {
-		padding: 10px;
-		display: block;
-		overflow: auto;
-	}
-	.title {
-		float: left;
-		width: 100%;
-		margin-top: 10%; 
-	}
-	.content{
-		width:100%;
-	}
-	.section-content .content > div {
-		padding-left: 0px;
-	}
-	/*EXPERIENCE*/ 
-
-	/*SKILLS*/
-
-
-	/*PROJECTS*/
-
-	/*SOCIAL*/
-	#social .title {
-		float: left;
-		width: 100%;
-	}
-	.content {
-		float: left;
-		width: 100%;
-	}
-	#twitterbackdrop{
-		background-repeat: no-repeat;
-		background-image: url(../images/social/apple-computer_390.png);
-		margin-top: 0px;
-		margin-left: 0px;
-		z-index: 5;
-		height: 52%;
-		width: 100%;
-		top: 37%;/*Do not change*/
-		left: 1%;
-		position: absolute;
-	}
-	#twitter_content{
-		margin-top: 0px;
-		margin-left: 0px;
-		width: 520px;
-		z-index: 6;
-		top: 0;
-		left: 2%;
-		position: relative;
-		overflow: hidden;
-		height: 43%;
-		margin-bottom:5%;
-		margin-top:20%;
-	}
-	#twitter-widget-0 {
-		height:230px !important;
-		width: 360px !important;
-	}
-	#githubbackdrop{
-		margin-top: 0px;
-		margin-left: 0px;
-		z-index: 7;
-		width:50%;
-		top: 75%;
-		left: 80%;
-		position: absolute;
-	}
-	#githubbackdrop img{
-		width:50%;
-	}
-	#linkedinbackdrop{
-		margin-top: 0px;
-		margin-left: 0px;
-		top: 10%;
-		left: 60%;
-		position: absolute;
-	}
-	#linkedinbackdrop img{
-		width:50%;
 	}
 	#stackoverflowbackdrop{
 		margin-top: 0px;

@@ -600,6 +600,9 @@ body{
 		left: 80%;
 		position: absolute;
 	}
+	#linkedinbackdrop img{
+		width:80%;
+	}
 	#stackoverflowbackdrop{
 		margin-top: 0px;
 		margin-left: 0px;

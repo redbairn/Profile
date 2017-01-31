@@ -980,13 +980,13 @@ body{
 	/*Can't move around the background as the Twitter feed is stuck in place under the Content section*/
 	#twitterbackdrop{
 		background-repeat: no-repeat;
-		background-image: url(../images/social/apple-computer_350.png);
+		background-image: url(../images/social/apple-computer_390.png);
 		margin-top: 0px;
 		margin-left: 0px;
 		z-index: 5;
-		height: 60%;
+		height: 50%;
 		width: 100%;
-		top: 36%;/*Do not change*/
+		top: 35%;/*Do not change*/
 		left: 0;
 		position: absolute;
 	}
@@ -1004,15 +1004,15 @@ body{
 		margin-top:20%;
 	}
 	#twitter-widget-0 {
-		height:200px !important;
-		width: 280px !important;
+		height:230px !important;
+		width: 100% !important;
 	}
 	#githubbackdrop{
 		margin-top: 0px;
 		margin-left: 0px;
 		z-index: 7;
 		width:50%;
-		top: 70%;
+		top: 75%;
 		left: 80%;
 		position: absolute;
 	}
@@ -1033,7 +1033,7 @@ body{
 		margin-top: 0px;
 		margin-left: 0px;
 		z-index: 8;
-		top: 70%;
+		top: 72%;
 		left: 5%;
 		position: absolute;
 	}

@@ -1,6 +1,7 @@
 # Profile
 The following is a link to my personal website using Github Pages:
-http://redbairn.github.io/profile
+~~http://redbairn.github.io/profile~~ 
+craigbell.ie
 
 - The website is built using HTML, CSS, jQuery Mobile and JavaScript.
 - I would have broken up the page, however, I could not use a server-side language (like PHP) to make it more modular because Github Pages does not allow for this.

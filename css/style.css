@@ -187,8 +187,8 @@ body{
 .avatar{
 	display: block;
 	margin: 4% auto 2% auto;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;/* for Safari and Chrome */
+	-moz-border-radius: 50%;/* for Firefox 3.5+ */
 	border-radius: 50%;
 	-webkit-box-shadow: 0 0 0 5px #fff, 0 0 0 6px #999, 0 10px 10px 8px rgba(0,0,0,.2);
 	-moz-box-shadow: 0 0 0 5px #fff, 0 0 0 6px #999, 0 10px 10px 8px rgba(0,0,0,.2);

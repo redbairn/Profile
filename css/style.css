@@ -293,6 +293,9 @@ body{
 #projects .box h2{
 	color: #52acd1;
 }
+#skyverge .box h2 {
+    color: #52acd1;
+}
 #projects .box:hover h2{
 	color: #fff;
 }

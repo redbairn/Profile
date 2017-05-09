@@ -302,6 +302,10 @@ body{
 .white-bg .box p {
 	color: #a3d0e3;
 }
+.white-bg .box li {
+    color: #a3d0e3;
+}
+
 /*Change for hover state (WHITE)*/
 .white-bg .box:hover {
 	border: 1px solid #3295be;

@@ -319,6 +319,9 @@ body{
 .white-bg .box:hover p{
 	color: #fff;
 }
+#skyverge .white-bg .box:hover {
+	color: #fff;
+}
 .white-bg .ui-link:hover{
 	text-decoration:none;
 }

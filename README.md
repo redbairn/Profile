@@ -13,9 +13,6 @@ The following is a link to my personal website using Github Pages:
   - Skillset
   - Projects
   - Social
-- A contact form is created in the menu but because we can't use a server-side language here I've decide to use [Formspree](https://formspree.io/)
 - The portfolio website links back to projects which are stored as repositories here on Github.
 
 **Currently a work in progress. :)**
-
-**If there is anything that you see buggy on my website please feel free to contact me through the contact form**

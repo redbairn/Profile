@@ -44,7 +44,8 @@
 			var key = prompt("What is your secret key? Find it here: https://"+domain+".learnupon.com/settings/integrations/sqsso/general"); // Found in the SQSSO Configuration page here: https://DOMAIN.learnupon.com/settings/integrations/sqsso/general
 			var emailAddress = prompt("Please enter your email address (you can replace the placeholder with your own test user)", "hp251@luptest.com").toLowerCase();
 			var language = prompt("Please enter the 2 letter language code","en_gb");
-			var enrollment_id = prompt("Please enter the enrollment_id (find this in the <a href=\"https://"+domain+".learnupon.com/users\">URL</href> when you go to a user's profile and select their enrollment)","207459157");
+			alert("In the next prompt you will need an Enrollment ID, e.g. 111222333, which can be seen like this: (https://"+domain+".learnupon.com/users/123456/enrollments/111222333). You can find this in the <a href=\"https://"+domain+".learnupon.com/users\">URL</href> when you go to a user's profile and select their enrollment");
+			var enrollment_id = prompt("Please enter the enrollment_id","207459157");
 	
 			alert("First TS: "+timestamp);
 			var message="USER="+emailAddress+"&TS="+timestamp+"&KEY="+key;

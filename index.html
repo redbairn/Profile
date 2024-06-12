@@ -42,9 +42,9 @@
 		  const timestamp = Math.floor(new Date().getTime()/1000.0);
 			var domain = prompt("What is your domain?"); // For example, DOMAIN.learnupon.com
 			var key = prompt("What is your secret key? Find it here: https://"+domain+".learnupon.com/settings/integrations/sqsso/general"); // Found in the SQSSO Configuration page here: https://DOMAIN.learnupon.com/settings/integrations/sqsso/general
-			var emailAddress = prompt("Please enter your email address ", "hp25@luptest.com").toLowerCase();
+			var emailAddress = prompt("Please enter your email address (you can replace the placeholder with your own test user)", "hp251@luptest.com").toLowerCase();
 			var language = prompt("Please enter the 2 letter language code","en_gb");
-			var enrollment_id = prompt("Please enter the enrollment_id","207459157");
+			var enrollment_id = prompt("Please enter the enrollment_id (find this in the <a href=\"https://"+domain+".learnupon.com/users\">URL</href> when you go to a user's profile and select their enrollment)","207459157");
 	
 			alert("First TS: "+timestamp);
 			var message="USER="+emailAddress+"&TS="+timestamp+"&KEY="+key;

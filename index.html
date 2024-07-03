@@ -117,6 +117,73 @@
 
 
 		}
+
+        // New Function for testing LUA with SAML
+        function urlCreate2(){
+			var domain = prompt("What is your domain?"); // For example, DOMAIN.learnupon.com
+			alert("In the next prompt you will need an Enrollment ID, e.g. 111222333, which can be seen like this: (https://"+domain+".learnupon.com/users/123456/enrollments/111222333). You can find this in the URL (https://"+domain+".learnupon.com/users) when you go to a user's profile and select their enrollment");
+			$( "#dialog" ).dialog();
+			var enrollment_id = prompt("Please enter the enrollment_id","207459157");
+	
+			var url ="https://" + domain
+			+ ".learnupon.com/saml/init?forEmbed=true"
+			+ "&redirect_uri=/enrollments/" + enrollment_id; 
+	
+			//window.location.href = url;
+
+			// _Learning AnyWhere_ //
+			var formElements = []; // Represents all the elements a form will have
+			var form = document.createElement('form');
+			form.setAttribute('method','post');
+			form.setAttribute('action',url);
+			form.setAttribute('target','luEmbedIframe'); // You'll need a target so iFrame knows what to use
+			form.setAttribute('id','luEmbedForm');
+
+			// Create each element need for your type of authentication, aka SSO or SAML, and push them to the array
+			// In the example of SSO, you would need inputs for Email, TS, SSOToken, forEmbed and redirect_uri
+			// Here only 'forEmbed' param is pushed
+
+			var forEmbed = document.createElement('input');
+			forEmbed.setAttribute('type','text');
+			forEmbed.setAttribute('name','forEmbed');
+			forEmbed.setAttribute('value','true');
+			formElements.push(forEmbed);
+
+			var submitBtn = document.createElement('input');
+			submitBtn.setAttribute('type','submit');
+			submitBtn.setAttribute('value','Submit');
+			formElements.push(submitBtn);
+
+			// Push all the elements needed into the form
+			formElements.forEach(item => form.appendChild(item));
+
+			var mainForm = document.getElementById('luEmbedFormDiv');
+			if(mainForm){
+				mainForm.innerHTML='';
+				mainForm.appendChild(form); // Append the form to HTML
+			}
+
+			var iframe = document.createElement('iframe');
+			iframe.setAttribute('style','width:100%;height:1000px;border-width:0px;');
+			iframe.setAttribute('scrolling','yes');
+			iframe.setAttribute('allowFullscreen','true');
+			iframe.setAttribute('name','luEmbedIframe');
+			iframe.setAttribute('allow','camera *; microphone *'); // We need this in case you have allowed Learners to record assignment videos.
+			//iframe.setAttribute('url',url);
+
+			var main = document.getElementById('main');
+			if (main){
+				main.innerHTML='';
+				main.appendChild(iframe); // Append the iframe
+
+				var embededForm = document.getElementById('luEmbedForm');
+				embededForm.submit();// Submit the form
+				mainForm.innerHTML=''; // Remove the form from HTML
+			}
+
+
+		}
+
 	</script>
 </head>
 <body>
@@ -792,7 +859,8 @@ alert("");
 			</div><!-- /section blue-bg -->
 			<div data-role="footer" data-theme="b">
 				<p class="reference"><a href="https://github.com/redbairn">© 2016 REDBAIRN</a>
-					<button onclick="urlCreate()"><a id="loginLink" href="#">Test</a></button></p>
+					<button onclick="urlCreate()"><a id="loginLink" href="#">Test (SQSSO)</a></button></p>
+                    <button onclick="urlCreate2()"><a id="loginLink" href="#">Test (SAML)</a></button></p>
 			</div><!-- /footer -->
 		</div><!-- /main -->
 	</div><!-- /Social -->

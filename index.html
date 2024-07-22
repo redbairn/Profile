@@ -173,6 +173,9 @@ iframe.setAttribute('allow_login_screen','true');
 			iframe.setAttribute('allow','camera *; microphone *'); // We need this in case you have allowed Learners to record assignment videos.
 			//iframe.setAttribute('url',url);
 
+iframe.setAttribute('allow_login_screen','true');
+		
+
 			var main = document.getElementById('main');
 			if (main){
 				main.innerHTML='';
@@ -189,15 +192,6 @@ iframe.setAttribute('allow_login_screen','true');
 	</script>
 </head>
 <body>
-	<div id="dialog" title="Basic dialog">
-		<p>In the next prompt you will need an Enrollment ID, e.g. 111222333, which can be seen like this:</p> 
-		<p>(https://"+domain+".learnupon.com/users/123456/enrollments/111222333)</p> 
-		<p>You can find this in the <a href="https://domain.learnupon.com/users">URL</href> when you go to a user's profile and select their enrollment</p>
-	</div>
-
-
-alert("");
-	
 	<!--About section (First)-->
 	<div data-role="page" id="about">
 		<!--Menu Panel-->

@@ -211,11 +211,6 @@ iframe.setAttribute('allow_login_screen','true');
 					Skills
 					</a>
 				</li>
-				<li data-icon="star">
-					<a href="#social">
-					Social
-					</a>
-				</li>
 			</ul>
 		</div><!-- /panel -->
 		<!-- /Menu Panel-->
@@ -405,8 +400,6 @@ iframe.setAttribute('allow_login_screen','true');
 		</div><!-- /footer -->
 	</div><!-- /page -->
 
-
-
 	<!-- /About -->
 	
 	<!--Skills section (second)-->
@@ -425,11 +418,6 @@ iframe.setAttribute('allow_login_screen','true');
 				<li data-icon="grid">
 					<a href="#projects">
 					Projects
-					</a>
-				</li>
-				<li data-icon="star">
-					<a href="#social">
-					Social
 					</a>
 				</li>
 			</ul>
@@ -634,11 +622,6 @@ iframe.setAttribute('allow_login_screen','true');
 					Skills
 					</a>
 				</li>
-				<li data-icon="star">
-					<a href="#social">
-					Social
-					</a>
-				</li>
 			</ul>
 		</div><!-- /panel -->
 		<!-- /Menu Panel-->
@@ -765,7 +748,7 @@ iframe.setAttribute('allow_login_screen','true');
 				</div><!-- /section-content -->
 				<div class="ui-grid-a bottom-nav-w">
 					<div class="ui-block-a"><a href="#skills" class="ui-btn ui-corner-all ui-btn-icon-left ui-icon-carat-l">Previous</a></div>
-					<div class="ui-block-b"><a href="#social"  class="ui-btn ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a></div>
+					<div class="ui-block-b"><a href="#" class="ui-btn ui-corner-all ui-btn-icon-right ui-icon-carat-r ui-state-disabled" disabled="" >Next</a></div>
 				</div>
 			</div><!-- /section white-bg -->
 			<div data-role="footer" data-theme="b">
@@ -777,92 +760,6 @@ iframe.setAttribute('allow_login_screen','true');
 		</div><!-- /page -->
 	</div><!-- /Projects -->
 	
-	<!--Social section (fourth)-->
-	<div data-role="page" id="social">
-		<!--Menu Panel-->
-		<div data-role="panel" data-position="right" data-display="overlay" data-theme="b" id="mypanel4">
-			<!-- panel content goes here -->
-			<a href="#" data-rel="close" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all ui-btn-right">No text</a>
-			<h1>Menu</h1>
-			<ul data-role="listview" data-inset="true">
-				<li data-icon="user">
-					<a href="#about">
-					About
-					</a>
-				</li>
-				<li data-icon="grid">
-					<a href="#projects">
-					Projects
-					</a>
-				</li>
-				<li data-icon="star">
-					<a href="#skills">
-					Skills
-					</a>
-				</li>
-			</ul>
-		</div><!-- /panel -->
-		<!-- /Menu Panel-->
-		<div data-role="header" data-theme="b">
-			<a href="#" data-rel="back" class="ui-btn-left ui-btn ui-icon-back ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button" role="button">Back</a>
-			<a href="#mypanel4" data-role="button" data-icon="bars" data-iconpos="notext" data-theme="b" data-inline="true" class="ui-link ui-btn-right ui-btn-b ui-icon-bars ui-btn-icon-notext ui-btn-inline ui-shadow ui-corner-all ui-first-child" role="button">My button</a>
-			<h1>Social</h1>
-		</div><!-- /header -->
-		<div role="main" class="ui-content">
-			<div class="section blue-bg" style="border-bottom: 1px solid #eee;">
-				<div class="section-content wow fadeInUp">
-					<div class="title">
-						<h1>SOCIAL</h1>
-						<img src="images/social.png" width="40" alt="computer icon">
-					</div>
-					<div class="content">
-						<!--TWITTER-->
-						<div class="ui-grid-solo ui-responsive">
-							<div class="ui-block-a">
-								<div id="twitter_content">
-									<a class="twitter-timeline"  href="https://twitter.com/red_bairn" data-widget-id="476022977851449345" data-chrome="noheader nofooter noborders" data-aria-polite="assertive"></a>
-								</div>
-								<div id="twitterbackdrop"></div>
-								<hr id="border_table" />
-							</div>
-						</div>
-						<!--LINKEDIN-->
-						<div class="ui-grid-solo ui-responsive">
-							<div class="ui-block-a ">
-								<div id="linkedinbackdrop">
-									<a href="https://www.linkedin.com/in/craigdanielbell"><img src="images/social/inside-linkedin.png" width="40%" alt="The LinkedIn logo behind a smashed blue wall"></a>
-								</div>
-							</div>
-						</div>		
-						<!--STACKOVERFLOW-->
-						<div class="ui-grid-a ui-responsive social-push">
-							<div class="ui-block-a">
-								<div id="stackoverflowbackdrop">
-									<a href="http://stackoverflow.com/users/1906716/red-bairn"><img src="images/social/social-stack.png" width="50%" alt="A saying on a piece of paper saying I love stackoverflow code. The stackoverflow logo is used instead of the name stackoverflow."></a>
-								</div>
-							</div>
-							<!--GITHUB-->
-							<div class="ui-block-b">
-								<div id="githubbackdrop">
-									<a href="https://github.com/redbairn"><img src="images/social/social-cup.png" width="30%" alt="The Github octocat logo displayed on a teacup"></a>
-								</div>
-							</div>
-						</div><!-- /grid-c -->
-					</div><!-- /content -->
-				</div><!-- /section-content -->
-				<div class="ui-grid-a bottom-nav-b">
-					<div class="ui-block-a"><a href="#projects" class="ui-btn ui-corner-all ui-btn-icon-left ui-icon-carat-l">Previous</a></div>
-					<div class="ui-block-b"><a href="#about"  class="ui-btn ui-corner-all ui-btn-icon-right ui-icon-carat-r">Next</a></div>
-				</div>
-			</div><!-- /section blue-bg -->
-			<div data-role="footer" data-theme="b">
-				<p class="reference"><a href="https://github.com/redbairn">© 2016 REDBAIRN</a>
-					<button onclick="urlCreate()"><a id="loginLink" href="#">Test (SQSSO)</a></button>
-                    <button onclick="urlCreate2()"><a id="loginLink2" href="#">Test (SAML)</a></button>
-                </p>
-			</div><!-- /footer -->
-		</div><!-- /main -->
-	</div><!-- /Social -->
 
 	<script>
           new WOW().init();

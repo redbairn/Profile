@@ -5,7 +5,6 @@
 *-1c/EXPERIENCE
 *-1d/SKILLS
 *-1e/PROJECTS
-*-1f/SOCIAL
 *2/-DESKTOPS
 *3/-LAPTOPS
 *4/-TABLETS
@@ -334,8 +333,6 @@ body{
 /*End of hover change state for white*/
 
 
-/*SOCIAL*/
-
 /******************/
 /*HI-DEF DESKTOPS*/
 /****************/
@@ -358,84 +355,6 @@ body{
 	/*PROJECTS*/
 	
 	
-	
-	/*SOCIAL*/
-	#social .title {
-		float: left;
-		width: 10%;
-	}
-	.content {
-		float: right;
-		width: 90%;
-	}
-	#twitterbackdrop{
-		background-repeat: no-repeat;
-		background-image: url(../images/social/apple-computer_650.png);
-		margin-top: 0px;
-		margin-left: 0px;
-		z-index: 5;
-		height: 60%;
-		width: 26%;
-		top: 13%;
-		left: 42%;
-		position: absolute;
-	}
-	#twitter_content{
-		margin-top: 0px;
-		margin-left: 0px;
-		margin-bottom:5%;
-		width: 610px;
-		z-index: 6;
-		left: 35%;
-		position: relative;
-		overflow: hidden;
-		height: 43%;
-	}
-
-	#twitter-widget-0 {
-		height:350px !important;
-		width: 800px !important;
-	}
-	#githubbackdrop{
-		margin-top: 0px;
-		margin-left: 0px;
-		height: 20%;
-		width:30%;
-		top: 50%;
-		left: 70%;
-		position: absolute;
-	}
-	#githubbackdrop img{
-		width:50%;
-	}
-	#linkedinbackdrop{
-		margin-top: 0px;
-		margin-left: 0px;
-		height: 100%;
-		top: 10%;
-		left: 80%;
-		position: absolute;
-	}
-	#linkedinbackdrop img{
-		width:90%;
-	}
-	#stackoverflowbackdrop{
-		margin-top: 0px;
-		margin-left: 0px;
-		height: 100%;
-		top: 55%;
-		left: 10%;
-		position: absolute;
-	}
-	#stackoverflowbackdrop img{
-		margin-top:10%;
-		width:60%;
-	}
-	#border_table{
-		height: 22px;
-		border: 0;
-		box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
-	}
 }/* min-width 2240px, xxlarge screens - Full HD+ */
 
 
@@ -466,73 +385,7 @@ body{
 	
 	
 	
-	/*SOCIAL*/
-	#social .title {
-		float: left;
-		width: 100%;
-	}
-	.content {
-		float: left;
-		width: 100%;
-	}
-	#twitterbackdrop{
-		background-repeat: no-repeat;
-		background-image: url(../images/social/apple-computer_550.png);
-		margin-top: 0px;
-		margin-left: 0px;
-		z-index: 5;
-		height: 100%;
-		width: 37%;
-		top: 25%;
-		left: 15%;
-		position: absolute;
-	}
-	#twitter_content{
-		margin-top: 0px;
-		margin-left: 0px;
-		width: 550px;
-		z-index: 6;
-		top: 0;
-		left: 20%;
-		position: relative;
-		overflow: hidden;
-		height: 43%;
-	}
-
-	#twitter-widget-0 {
-		height:330px !important;
-		width: 510px !important;
-	}
-	#githubbackdrop{
-		margin-top: 0px;
-		margin-left: 0px;
-		height: 20%;
-		width:30%;
-		top: 70%;
-		left: 70%;
-		position: absolute;
-	}
-	#linkedinbackdrop{
-		margin-top: 0px;
-		margin-left: 0px;
-		height: 100%;
-		top: 30%;
-		left: 80%;
-		position: absolute;
-	}
-	#stackoverflowbackdrop{
-		margin-top: 0px;
-		margin-left: 0px;
-		height: 100%;
-		top: 70%;
-		left: 5%;
-		position: absolute;
-	}
-	#border_table{
-		height: 22px;
-		border: 0;
-		box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
-	}
+	
 } /* min-width 1921px and max-width 2240px, xxlarge screens - FHD (Full HD) */
 
 /***********/
@@ -558,74 +411,7 @@ body{
 	
 	
 	
-	/*SOCIAL*/
-	#social .title {
-		float: left;
-		width: 100%;
-	}
-	.content {
-		float: left;
-		width: 100%;
-	}
-	/*Can't move around the background as the Twitter feed is stuck in place under the Content section*/
-	#twitterbackdrop{
-		background-repeat: no-repeat;
-		background-image: url(../images/social/apple-computer_550.png);
-		margin-top: 0px;
-		margin-left: 0px;
-		z-index: 5;
-		height: 55%;
-		width: 37%;
-		top: 28%;/*Do not change*/
-		left: 23%;
-		position: absolute;
-	}
-	#twitter_content{
-		margin-top: 0px;
-		margin-left: 0px;
-		width: 550px;
-		z-index: 6;
-		top: 0;
-		left: 20%;
-		position: relative;
-		overflow: hidden;
-		height: 43%;
-		margin-bottom:6%;
-	}
-	#twitter-widget-0 {
-		height:330px !important;
-		width: 510px !important;
-	}
-	#githubbackdrop{
-		margin-top: 0px;
-		margin-left: 0px;
-		width:30%;
-		top: 70%;
-		left: 70%;
-		position: absolute;
-	}
-	#linkedinbackdrop{
-		margin-top: 0px;
-		margin-left: 0px;
-		top: 30%;
-		left: 80%;
-		position: absolute;
-	}
-	#linkedinbackdrop img{
-		width:80%;
-	}
-	#stackoverflowbackdrop{
-		margin-top: 0px;
-		margin-left: 0px;
-		top: 70%;
-		left: 5%;
-		position: absolute;
-	}
-	#border_table{
-		height: 22px;
-		border: 0;
-		box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
-	}
+	
 
 
 } /* min-width 1600px and max-width 1920px, use when QAing xlarge screen-only issues */
@@ -652,75 +438,6 @@ body{
 	/*PROJECTS*/
 	
 	
-	
-	/*SOCIAL*/
-	#social .title {
-		float: left;
-		width: 100%;
-	}
-	.content {
-		float: left;
-		width: 100%;
-	}
-	/*Can't move around the background as the Twitter feed is stuck in place under the Content section*/
-	#twitterbackdrop{
-		background-repeat: no-repeat;
-		background-image: url(../images/social/apple-computer_550.png);
-		margin-top: 0px;
-		margin-left: 0px;
-		z-index: 5;
-		height: 55%;
-		width: 37%;
-		top: 28%;/*Do not change*/
-		left: 24%;
-		position: absolute;
-	}
-	#twitter_content{
-		margin-top: 0px;
-		margin-left: 0px;
-		width: 520px;
-		z-index: 6;
-		top: 0;
-		left: 20%;
-		position: relative;
-		overflow: hidden;
-		height: 43%;
-		margin-bottom:5%;
-	}
-	#twitter-widget-0 {
-		height:330px !important;
-		width: 520px !important;
-	}
-	#githubbackdrop{
-		margin-top: 0px;
-		margin-left: 0px;
-		height: 20%;
-		width:30%;
-		top: 70%;
-		left: 70%;
-		position: absolute;
-	}
-	#linkedinbackdrop{
-		margin-top: 0px;
-		margin-left: 0px;
-		height: 100%;
-		top: 30%;
-		left: 80%;
-		position: absolute;
-	}
-	#stackoverflowbackdrop{
-		margin-top: 0px;
-		margin-left: 0px;
-		height: 100%;
-		top: 70%;
-		left: 5%;
-		position: absolute;
-	}
-	#border_table{
-		height: 22px;
-		border: 0;
-		box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
-	}
 }/* min-width 1441px and max-width 1600px, use when QAing xlarge screen-only issues */
 
 
@@ -748,78 +465,7 @@ body{
 	
 	
 	
-	/*SOCIAL*/
-	#social .title {
-		float: left;
-		width: 100%;
-	}
-	.content {
-		float: left;
-		width: 100%;
-	}
-	/*Can't move around the background as the Twitter feed is stuck in place under the Content section*/
-	#twitterbackdrop{
-		background-repeat: no-repeat;
-		background-image: url(../images/social/apple-computer_550.png);
-		margin-top: 0px;
-		margin-left: 0px;
-		z-index: 5;
-		height: 55%;
-		width: 41%;
-		top: 28%;/*Do not change*/
-		left: 25%;
-		position: absolute;
-	}
-	#twitter_content{
-		margin-top: 0px;
-		margin-left: 0px;
-		width: 520px;
-		z-index: 6;
-		top: 0;
-		left: 20%;
-		position: relative;
-		overflow: hidden;
-		height: 43%;
-		margin-bottom:8%;
-	}
-	#twitter-widget-0 {
-		height:330px !important;
-		width: 520px !important;
-	}
-	#githubbackdrop{
-		margin-top: 0px;
-		margin-left: 0px;
-		width:30%;
-		top: 65%;
-		left: 70%;
-		position: absolute;
-	}
-	#githubbackdrop img{
-		width:50%;
-	}
-	#linkedinbackdrop{
-		margin-top: 0px;
-		margin-left: 0px;
-		top: 30%;
-		left: 80%;
-		position: absolute;
-	}
-	#stackoverflowbackdrop{
-		margin-top: 0px;
-		margin-left: 0px;
-		top: 70%;
-		left: 5%;
-		position: absolute;
-	}
-	#stackoverflowbackdrop img{
-		margin-top:10%;
-		width:40%;
-	}
-	#border_table{
-		height: 22px;
-		border: 0;
-		box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
-	}
+	
 } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
 
 /**********/
@@ -845,76 +491,7 @@ body{
 	
 	
 	
-	/*SOCIAL*/
-	#social .title {
-		float: left;
-		width: 100%;
-	}
-	.content {
-		float: left;
-		width: 100%;
-	}
-	/*Can't move around the background as the Twitter feed is stuck in place under the Content section*/
-	#twitterbackdrop{
-		background-repeat: no-repeat;
-		background-image: url(../images/social/apple-computer_550.png);
-		margin-top: 0px;
-		margin-left: 0px;
-		z-index: 5;
-		height: 55%;
-		width: 55%;
-		top: 27%;/*Do not change*/
-		left: 27%;
-		position: absolute;
-	}
-	#twitter_content{
-		margin-top: 0px;
-		margin-left: 0px;
-		width: 520px;
-		z-index: 6;
-		top: 0;
-		left: 20%;
-		position: relative;
-		overflow: hidden;
-		height: 43%;
-		margin-bottom:10%;
-	}
-	#twitter-widget-0 {
-		height:330px !important;
-		width: 520px !important;
-	}
-	#githubbackdrop{
-		margin-top: 0px;
-		margin-left: 0px;
-		z-index: 4;
-		width:50%;
-		top: 75%;
-		left: 80%;
-		position: absolute;
-	}
-	#linkedinbackdrop{
-		margin-top: 0px;
-		margin-left: 0px;
-		top: 10%;
-		left: 85%;
-		position: absolute;
-	}
-	#linkedinbackdrop img{
-		width:80%;
-	}
 	
-	#stackoverflowbackdrop{
-		margin-top: 0px;
-		margin-left: 0px;
-		top: 70%;
-		left: 5%;
-		position: absolute;
-	}
-	#border_table{
-		height: 22px;
-		border: 0;
-		box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
-	}
 } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
 /**********/
@@ -965,89 +542,7 @@ body{
 	
 	
 	
-	/*SOCIAL*/
-	#social .title {
-		float: left;
-		width: 100%;
-	}
-	.content {
-		float: left;
-		width: 100%;
-	}
-	/*Can't move around the background as the Twitter feed is stuck in place under the Content section*/
-	#twitterbackdrop{
-		background-repeat: no-repeat;
-		background-image: url(../images/social/apple-computer_390.png);
-		margin-top: 0px;
-		margin-left: 0px;
-		z-index: 5;
-		height: 60%;
-		width: 100%;
-		top: 37%;/*Do not change*/
-		left: 9%;
-		position: absolute;
-	}
-	#twitter_content{
-		margin-top: 0px;
-		margin-left: 0px;
-		width: 520px;
-		z-index: 6;
-		top: 0;
-		left: 10%;
-		position: relative;
-		overflow: hidden;
-		height: 43%;
-		margin-bottom:8%;
-		margin-top:20%;
-	}
-	#twitter-widget-0 {
-		height:230px !important;
-		width: 360px !important;
-	}
-	#githubbackdrop{
-		margin-top: 0px;
-		margin-left: 0px;
-		z-index: 7;
-		width:50%;
-		top: 70%;
-		left: 80%;
-		position: absolute;
-	}
-	#githubbackdrop img{
-		width:50%;
-	}
-	#linkedinbackdrop{
-		margin-top: 0px;
-		margin-left: 0px;
-		top: 10%;
-		left: 50%;
-		position: absolute;
-	}
-	#linkedinbackdrop img{
-		width:80%;
-	}
-	#stackoverflowbackdrop{
-		margin-top: 0px;
-		margin-left: 0px;
-		z-index: 8;
-		top: 70%;
-		left: 5%;
-		position: absolute;
-	}
-	#stackoverflowbackdrop img{
-		margin-top:10%;
-		width:30%;
-	}
 	
-	#border_table{
-		margin-top:10%;
-		height: 22px;
-		border: 0;
-		box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
-	}
-	.social-push{
-		margin-bottom:10%;
-	}
 }
 /*LANDSCAPE (Large Smart Phones)*/
 @media screen and (min-width: 30em) and (max-width: 40.063em) and (orientation: landscape) { 
@@ -1087,88 +582,7 @@ body{
 
 	/*PROJECTS*/
 
-	/*SOCIAL*/
-	#social .title {
-		float: left;
-		width: 100%;
-	}
-	.content {
-		float: left;
-		width: 100%;
-	}
-	#twitterbackdrop{
-		background-repeat: no-repeat;
-		background-image: url(../images/social/apple-computer_390.png);
-		margin-top: 0px;
-		margin-left: 0px;
-		z-index: 5;
-		height: 52%;
-		width: 100%;
-		top: 40%;/*Do not change*/
-		left: 2%;
-		position: absolute;
-	}
-	#twitter_content{
-		margin-top: 0px;
-		margin-left: 0px;
-		width: 520px;
-		z-index: 6;
-		top: 0;
-		left: 2%;
-		position: relative;
-		overflow: hidden;
-		height: 43%;
-		margin-bottom:5%;
-		margin-top:20%;
-	}
-	#twitter-widget-0 {
-		height:230px !important;
-		width: 370px !important;
-	}
-	#githubbackdrop{
-		margin-top: 0px;
-		margin-left: 0px;
-		z-index: 7;
-		width:50%;
-		top: 70%;
-		left: 70%;
-		position: absolute;
-	}
-	#githubbackdrop img{
-		width:50%;
-	}
-	#linkedinbackdrop{
-		margin-top: 0px;
-		margin-left: 0px;
-		top: 10%;
-		left: 55%;
-		position: absolute;
-	}
-	#linkedinbackdrop img{
-		width:50%;
-	}
-	#stackoverflowbackdrop{
-		margin-top: 0px;
-		margin-left: 0px;
-		z-index: 8;
-		top: 72%;
-		left: 5%;
-		position: absolute;
-	}
-	#stackoverflowbackdrop img{
-		margin-top:10%;
-		width:30%;
-	}
-	
-	#border_table{
-		margin-top:10%;
-		height: 22px;
-		border: 0;
-		box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
-	}
-	.social-push{
-		margin-bottom:10%;
-	}
+
 }/*Ex.800x480 - OnePlus 3*/
 /**********/
 /*MOBILE**/
@@ -1213,87 +627,4 @@ body{
 	
 	
 	
-	/*SOCIAL*/
-	#social .title {
-		float: left;
-		width: 100%;
-	}
-	.content {
-		float: left;
-		width: 100%;
-	}
-	/*Can't move around the background as the Twitter feed is stuck in place under the Content section*/
-	#twitterbackdrop{
-		background-repeat: no-repeat;
-		background-image: url(../images/social/apple-computer_390.png);
-		margin-top: 0px;
-		margin-left: 0px;
-		z-index: 5;
-		height: 50%;
-		width: 100%;
-		top: 35%;/*Do not change*/
-		left: 0;
-		position: absolute;
-	}
-	#twitter_content{
-		margin-top: 0px;
-		margin-left: 0px;
-		width: 520px;
-		z-index: 6;
-		top: 0;
-		left: 2%;
-		position: relative;
-		overflow: hidden;
-		height: 43%;
-		margin-bottom:5%;
-		margin-top:20%;
-	}
-	#twitter-widget-0 {
-		height:230px !important;
-		width: 360px !important;
-	}
-	#githubbackdrop{
-		margin-top: 0px;
-		margin-left: 0px;
-		z-index: 7;
-		width:50%;
-		top: 75%;
-		left: 80%;
-		position: absolute;
-	}
-	#githubbackdrop img{
-		width:50%;
-	}
-	#linkedinbackdrop{
-		margin-top: 0px;
-		margin-left: 0px;
-		top: 10%;
-		left: 50%;
-		position: absolute;
-	}
-	#linkedinbackdrop img{
-		width:80%;
-	}
-	#stackoverflowbackdrop{
-		margin-top: 0px;
-		margin-left: 0px;
-		z-index: 8;
-		top: 72%;
-		left: 5%;
-		position: absolute;
-	}
-	#stackoverflowbackdrop img{
-		margin-top:10%;
-		width:30%;
-	}
-	
-	#border_table{
-		margin-top:10%;
-		height: 22px;
-		border: 0;
-		box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
-	}
-	.social-push{
-		margin-bottom:10%;
-	}
 }

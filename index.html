@@ -126,7 +126,7 @@ iframe.setAttribute('allow_login_screen','true');
 			var domain = prompt("What is your domain?"); // For example, DOMAIN.learnupon.com
 			alert("In the next prompt you will need the Course ID, e.g. 123456, which can be seen like this: (https://"+domain+".learnupon.com/courses/4445551). You can find this in the URL (https://"+domain+".learnupon.com/users) when you go to a user's profile and select their enrollment");
 			$( "#dialog" ).dialog();
-			var enrollment_id = prompt("Please enter the enrollment_id","4445551");
+			var course_id = prompt("Please enter the course_id","4445551");
 	
 			var url ="https://" + domain
 			+ ".learnupon.com/saml/init?forEmbed=true"

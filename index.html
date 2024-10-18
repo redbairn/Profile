@@ -189,6 +189,88 @@ iframe.setAttribute('allow_login_screen','true');
 
 
 		}
+		/*Testing out another type of redirect (?vd=1) */ 
+		function urlCreate3(){
+			var domain = prompt("What is your domain? (e.g. https://example.learnupon.com)"); // For example, DOMAIN.learnupon.com
+			var key = prompt("What is your secret key? Find it here: https://"+domain+".learnupon.com/settings/integrations/sqsso/general"); // Found in the SQSSO Configuration page here: https://DOMAIN.learnupon.com/settings/integrations/sqsso/general
+			var emailAddress = prompt("Please enter your email address (you can replace the placeholder with your own test user)", "hp251@luptest.com").toLowerCase();
+
+
+
+			const timestamp = Math.floor(new Date().getTime()/1000.0);
+	
+			alert("First TS: "+timestamp);
+			var message="USER="+emailAddress+"&TS="+timestamp+"&KEY="+key;
+			
+	
+			/** NORMAL words**/
+			var token = sha256(message);
+	
+			var url = domain
+			+ "/sqsso?Email=" + encodeURIComponent(emailAddress)
+			+ "&TS=" + timestamp
+			+ "&SSOToken=" + token
+			+ "&EmailAddress=" + encodeURIComponent(emailAddress)
+			+ "&forEmbed=true&redirect_uri=/courses?vd=1";
+
+			//window.location.href = url;
+
+			// _Learning AnyWhere_ //
+			var formElements = []; // Represents all the elements a form will have
+			var form = document.createElement('form');
+			form.setAttribute('method','post');
+			form.setAttribute('action',url);
+			form.setAttribute('target','luEmbedIframe'); // You'll need a target so iFrame knows what to use
+			form.setAttribute('id','luEmbedForm');
+
+			// Create each element need for your type of authentication, aka SSO or SAML, and push them to the array
+			// In the example of SSO, you would need inputs for Email, TS, SSOToken, forEmbed and redirect_uri
+			// Here only 'forEmbed' param is pushed
+
+			var forEmbed = document.createElement('input');
+			forEmbed.setAttribute('type','text');
+			forEmbed.setAttribute('name','forEmbed');
+			forEmbed.setAttribute('value','true');
+			formElements.push(forEmbed);
+
+			var submitBtn = document.createElement('input');
+			submitBtn.setAttribute('type','submit');
+			submitBtn.setAttribute('value','Submit');
+			formElements.push(submitBtn);
+
+			// Push all the elements needed into the form
+			formElements.forEach(item => form.appendChild(item));
+
+			var mainForm = document.getElementById('luEmbedFormDiv');
+			if(mainForm){
+				mainForm.innerHTML='';
+				mainForm.appendChild(form); // Append the form to HTML
+			}
+
+			var iframe = document.createElement('iframe');
+			iframe.setAttribute('style','width:100%;height:1000px;border-width:0px;');
+			iframe.setAttribute('scrolling','yes');
+			iframe.setAttribute('allowFullscreen','true');
+
+iframe.setAttribute('allow_login_screen','true');
+			iframe.setAttribute('name','luEmbedIframe');
+			iframe.setAttribute('allow','camera *; microphone *'); // We need this in case you have allowed Learners to record assignment videos.
+			//iframe.setAttribute('url',url);
+
+			var main = document.getElementById('main');
+			if (main){
+				main.innerHTML='';
+				main.appendChild(iframe); // Append the iframe
+
+				var embededForm = document.getElementById('luEmbedForm');
+				embededForm.submit();// Submit the form
+				mainForm.innerHTML=''; // Remove the form from HTML
+			}
+
+
+		}
+
+		
 
 	</script>
 </head>
@@ -765,6 +847,7 @@ iframe.setAttribute('allow_login_screen','true');
 				<p class="reference"><a href="https://github.com/redbairn">© 2016 REDBAIRN</a>
                     <button onclick="urlCreate()"><a id="loginLink" href="#">Test (SQSSO)</a></button>
                     <button onclick="urlCreate2()"><a id="loginLink2" href="#">Test (SAML)</a></button>
+					<button onclick="urlCreate3()"><a id="loginLink3" href="#">Test (SQSSO - vd1)</a></button>
                 </p>
 			</div><!-- /footer -->
 		</div><!-- /page -->
@@ -777,5 +860,3 @@ iframe.setAttribute('allow_login_screen','true');
 	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </body>
 </html>
-
-

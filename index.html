@@ -195,8 +195,6 @@ iframe.setAttribute('allow_login_screen','true');
 			var key = prompt("What is your secret key? Find it here: https://"+domain+".learnupon.com/settings/integrations/sqsso/general"); // Found in the SQSSO Configuration page here: https://DOMAIN.learnupon.com/settings/integrations/sqsso/general
 			var emailAddress = prompt("Please enter your email address (you can replace the placeholder with your own test user)", "hp251@luptest.com").toLowerCase();
 
-
-
 			const timestamp = Math.floor(new Date().getTime()/1000.0);
 	
 			alert("First TS: "+timestamp);
@@ -210,7 +208,6 @@ iframe.setAttribute('allow_login_screen','true');
 			+ "/sqsso?Email=" + encodeURIComponent(emailAddress)
 			+ "&TS=" + timestamp
 			+ "&SSOToken=" + token
-			+ "&EmailAddress=" + encodeURIComponent(emailAddress)
 			+ "&forEmbed=true&redirect_uri=/courses?vd=1";
 
 			//window.location.href = url;

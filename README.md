@@ -5,8 +5,8 @@ The following were links to my personal website using Github Pages:
 
 While the code still exists here I have a new website on WordPress which you can access [here](http://craigbell.ie/).
 
-- The website is built using HTML, CSS, jQuery Mobile and JavaScript.
-- I would have broken up the page, however, I could not use a server-side language (like PHP) to make it more modular because Github Pages does not allow for this.
+- The website was built using HTML, CSS, jQuery Mobile and JavaScript.
+- I would have broken up the page, however, I could not use a server-side language (like PHP) to make it more modular because Github Pages did not allow for this.
 - The website has the following sections:-
   - About
   - Education
@@ -15,5 +15,3 @@ While the code still exists here I have a new website on WordPress which you can
   - Projects
   - Social
 - The portfolio website links back to projects which are stored as repositories here on Github.
-
-**Currently a work in progress. :)**
